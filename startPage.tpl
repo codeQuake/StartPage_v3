@@ -14,7 +14,12 @@
         </div>
         {if $userMessages|isset}{@$userMessages}{/if}
         {if $additionalTopContents|isset}{@$additionalTopContents}{/if}
-        <!--TODO-->
+        
+		<div>
+			{foreach from=$rightBoxes item=box}
+				{include file='$box->boxName'}
+			{/foreach}
+		</div>
 
     </div>
     {include file='footer' sandbox=false}
