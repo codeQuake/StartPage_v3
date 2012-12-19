@@ -21,6 +21,7 @@ class StartPage extends AbstractPage{
     **/
     public function readData(){
         parent::readData();
+            //testing ;)
            StartPageBoxHelper::getBoxList("right");
         }
     
