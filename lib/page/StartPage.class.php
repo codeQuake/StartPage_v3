@@ -10,6 +10,7 @@ require_once(WCF_DIR.'lib/page/AbstractPage.class.php');
 
 //wbb imports
 require_once(WBB_DIR.'lib/data/startPage/box/StartPageBox.class.php');
+require_once(WBB_DIR.'lib/data/startPage/box/StartPageBoxHelper.class.php');
 
 
 class StartPage extends AbstractPage{
@@ -20,19 +21,7 @@ class StartPage extends AbstractPage{
     **/
     public function readData(){
         parent::readData();
-          //get left List:
-          $sql = "SELECT boxID
-                    FROM wbb".WBB_N."_startPageBoxes
-                    WHERE boxType = 'left'
-                    AND active = 1
-                    ORDER BY showOrder ASC";
-                    
-         //get right List:
-          $sql = "SELECT boxID
-                    FROM wbb".WBB_N."_startPageBoxes
-                    WHERE boxType = 'right'
-                    AND active = 1
-                    ORDER BY showOrder ASC";
+           StartPageBoxHelper::getBoxList("right");
         }
     
     /**
