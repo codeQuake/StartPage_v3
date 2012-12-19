@@ -2,7 +2,7 @@
 <package name="de.codequake.page.start">
   <packageinformation>
     <packagename>Startseite</packagename>
-    <packagedescription>Startseite für das WoltLab Burning Board</packagedescription>
+    <packagedescription>Startseite fur das WoltLab Burning Board</packagedescription>
     <version>3.0.0 dev 1</version>
     <date>2012-12-18</date>
     <standalone>0</standalone>#
@@ -15,7 +15,7 @@
   </authorinformation>
 
   <requiredpackages>
-    <requiredpackage minversion="2.1.0"></requiredpackage>
+    <requiredpackage minversion="2.1.0">com.woltlab.wbb</requiredpackage>
   </requiredpackages>
 
   <optionalpackages />
