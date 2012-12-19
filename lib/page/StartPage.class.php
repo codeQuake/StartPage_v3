@@ -8,6 +8,9 @@
 //wcf imports
 require_once(WCF_DIR.'lib/page/AbstractPage.class.php');
 
+//wbb imports
+require_once(WBB_DIR.'lib/data/startPage/box/StartPageBox.class.php');
+
 
 class StartPage extends AbstractPage{
     public $templateName = 'startPage';
@@ -17,6 +20,7 @@ class StartPage extends AbstractPage{
     **/
     public function readData(){
         parent::readData();
+         
         }
     
     /**
