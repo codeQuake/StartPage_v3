@@ -23,6 +23,6 @@
   <instructions type="install">
     <files>files.tar</files>
     <templates>templates.tar</templates>
-    <sql>sql.sql</sql>
+    <sql>install.sql</sql>
   </instructions>
 </package>
