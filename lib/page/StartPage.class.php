@@ -22,7 +22,7 @@ class StartPage extends AbstractPage{
     public function readData(){
         parent::readData();
             //testing ;)
-           $rightBoxes = StartPageBoxHelper::getBoxList("right");
+           StartPageBoxHelper::getBoxList("right");
         }
     
     /**
@@ -30,7 +30,7 @@ class StartPage extends AbstractPage{
     **/
     public function assignVariables(){
         parent::assignVariables();
-        WCF::getTPL()->assign(array($rightBoxes => 'rightBoxes'));
+        WCF::getTPL()->assign(array());
     }
 }
 ?>
