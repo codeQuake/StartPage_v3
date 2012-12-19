@@ -21,6 +21,8 @@
   <optionalpackages />
 
   <instructions type="install">
-    <!--Coming Soon ;)-->
+    <files>files.tar</files>
+    <templates>templates.tar</templates>
+    <sql>sql.sql</sql>
   </instructions>
 </package>
