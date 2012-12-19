@@ -1,5 +1,5 @@
 ﻿DROP TABLE IF EXISTS wbb1_1_startpageboxes;
-CREATE TABLE wbb1_1_startPageBoxes(
+CREATE TABLE wbb1_1_startpageboxes(
 	boxID INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	boxName VARCHAR(255) NOT NULL DEFAULT '',
 	boxType VARCHAR(255) NOT NULL DEFAULT 'left',
