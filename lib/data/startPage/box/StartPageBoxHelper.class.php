@@ -12,7 +12,7 @@ class StartPageBoxHelper{
     public function getBoxList($type)
     {
         $sql = "SELECT boxID
-                FROM wbb".WBB_N."_startPageBoxes
+                FROM wbb".WBB_N."_startpageboxes
                 WHERE boxType = '".$type."'
                 AND active = 1
                 ORDER BY showOrder ASC";

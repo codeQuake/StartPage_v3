@@ -1,4 +1,4 @@
-﻿DROP TABLE IF EXISTS wbb1_1_startPageBoxes;
+﻿DROP TABLE IF EXISTS wbb1_1_startpageboxes;
 CREATE TABLE wbb1_1_startPageBoxes(
 	boxID INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	boxName VARCHAR(255) NOT NULL DEFAULT '',

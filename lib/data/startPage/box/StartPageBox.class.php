@@ -17,7 +17,7 @@ class StartPageBox extends DatabaseObject{
     public function __construct($boxID, $row=null){
         if($boxID != null){
             $sql = "SELECT * 
-                    FROM wbb".WBB_N."_startPageBoxes 
+                    FROM wbb".WBB_N."_startpageboxes 
                     WHERE boxID = ".$boxID;
             $row = WCF::getDB()->getFirstRow($sql);
         }
