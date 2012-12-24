@@ -7,7 +7,7 @@
 {include file='header' sandbox=false}
     <div id="main">
         <div class="mainHeadline">
-            <img src="{icon}startL.png{/icon} alt="" />
+            <img src="{icon}startL.png{/icon}" alt="" />
             <div class="headlineContainer">
                 <h2>{lang}{PAGE_TITLE}{/lang}</h2>
                 <p>{lang}{PAGE_DESCRIPTION}{/lang}</p>
