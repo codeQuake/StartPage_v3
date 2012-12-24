@@ -24,6 +24,7 @@
   <instructions type="install">
     <files>files.tar</files>
     <templates>templates.tar</templates>
+    <packageinstallationplugins>pip.tar</packageinstallationplugins>
     <sql>install.sql</sql>
   </instructions>
 </package>
