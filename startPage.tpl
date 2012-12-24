@@ -15,12 +15,35 @@
         </div>
         {if $userMessages|isset}{@$userMessages}{/if}
         {if $additionalTopContents|isset}{@$additionalTopContents}{/if}
-        
-		<div>
-			{foreach from=$rightBoxes item=box}
-				{assign var=boxName value=$box->boxName}
-				{include file="$boxName"}
-			{/foreach}
+
+		<--!Box System-->
+        <div class="border">
+			<div class="layout-2">
+				<div class="columnContainer">
+					<div class="container-1 column first">
+						<div class="columnInner">
+							<div class="contentBox">
+								<!---left Boxes--->
+								{foreach from=$leftBoxes item=box}
+								{assign var=boxName value=$box->boxName}
+								{include file="$boxName"}
+								{/foreach}
+							</div>
+						</div>
+					</div>
+					<div class="container-3 column second">
+						<div class="columnInner">
+							<div class="contentBox">
+								<!---right Boxes--->
+								{foreach from=$rightBoxes item=box}
+								{assign var=boxName value=$box->boxName}
+								{include file="$boxName"}
+								{/foreach}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
     </div>
