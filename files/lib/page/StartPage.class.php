@@ -23,6 +23,10 @@ class StartPage extends AbstractPage{
     **/
     public function readData(){
         parent::readData();
+           //sets Active Menu Item
+		   require_once(WCF_DIR.'lib/page/util/menu/PageMenu.class.php');
+		   PageMenu::setActiveMenuItem('wbb.header.menu.start');
+        
            $this->rightBoxes = array();
            $this->leftBoxes = array();
            
