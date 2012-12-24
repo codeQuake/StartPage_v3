@@ -16,7 +16,7 @@
         {if $userMessages|isset}{@$userMessages}{/if}
         {if $additionalTopContents|isset}{@$additionalTopContents}{/if}
 
-		<--!Box System-->
+		<!--Box System-->
         <div class="border">
 			<div class="layout-2">
 				<div class="columnContainer">
