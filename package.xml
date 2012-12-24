@@ -22,9 +22,17 @@
   <optionalpackages />
 
   <instructions type="install">
+    <!--archives-->
     <files>files.tar</files>
     <templates>templates.tar</templates>
     <packageinstallationplugins>pip.tar</packageinstallationplugins>
+    
+    <!--XML-->
+    <pagemenu>pagemenu.xml</pagemenu>
+    <language languagecode="de">de.xml</language>
+    <options>options.xml</options>
+    
+    <!--other files-->
     <sql>install.sql</sql>
   </instructions>
 </package>
