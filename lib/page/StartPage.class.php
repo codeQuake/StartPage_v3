@@ -16,15 +16,19 @@ require_once(WBB_DIR.'lib/data/startPage/box/StartPageBoxHelper.class.php');
 class StartPage extends AbstractPage{
     public $templateName = 'startPage';
     public $rightBoxes;
+    public $leftBoxes;
     
     /**
     ** @see: Page::readData();
     **/
     public function readData(){
         parent::readData();
-            //testing ;)
            $this->rightBoxes = array();
+           $this->leftBoxes = array();
+           
+           
            $this->rightBoxes = StartPageBoxHelper::getBoxList("right");
+           $this->leftBoxes = StartPageBoxHelper::getBoxList("left");
            
         }
     
@@ -33,7 +37,8 @@ class StartPage extends AbstractPage{
     **/
     public function assignVariables(){
         parent::assignVariables();
-        WCF::getTPL()->assign(array('rightBoxes' => $this->rightBoxes));
+        WCF::getTPL()->assign(array('rightBoxes' => $this->rightBoxes,
+                                    'leftBoxes' => $this->leftBoxes));
         
     }
 }
