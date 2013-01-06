@@ -29,7 +29,7 @@
     
     <!--XML-->
     <pagemenu>pagemenu.xml</pagemenu>
-    <language languagecode="de">de.xml</language>
+    <languages languagecode="de">de.xml</languages>
     <options>options.xml</options>
     <acpmenu>acpmenu.xml</acpmenu>
     
