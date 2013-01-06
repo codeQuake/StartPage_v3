@@ -1,4 +1,4 @@
-﻿{include file="documentHeader"}
+{include file="documentHeader"}
 <head>
 	<title>{lang}wbb.start.title{/lang} - {lang}{PAGE_TITLE}{/lang}</title>
 	{include file='headInclude' sandbox=false}
