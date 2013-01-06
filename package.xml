@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite</packagename>
     <packagedescription>Startseite fur das WoltLab Burning Board</packagedescription>
-    <version>3.0.0 dev 1</version>
+    <version>3.0.0 dev2</version>
     <date>2012-12-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -31,6 +31,7 @@
     <pagemenu>pagemenu.xml</pagemenu>
     <language languagecode="de">de.xml</language>
     <options>options.xml</options>
+    <acpmenu>acpmenu.xml</acpmenu>
     
     <!--other files-->
     <sql>install.sql</sql>
