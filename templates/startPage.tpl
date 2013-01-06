@@ -1,6 +1,6 @@
 ﻿{include file='documentHeader'}
 <head>
-    <title>{lang}wbb.startPage.title{/lang} - {lang}{PAGE_TITLE}{/lang}</title>
+    <title>{lang}wbb.start.title{/lang} - {lang}{PAGE_TITLE}{/lang}</title>
     {include file='headInclude' sandbox=false}
 </head>
 <body {if $templateName|isset} id ="{$templateName|ucfirst}"{/if}>

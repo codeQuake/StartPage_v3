@@ -6,6 +6,7 @@
       <iconsmall>startS.png</iconsmall>
       <link>index.php?page=Start</link>
       <position>header</position>
+      <showorder>0</showorder>
     </pagemenuitem>
   </import>
   </data>
