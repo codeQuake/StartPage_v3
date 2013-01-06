@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 ** @author Jens Krumsieck
 ** @package de.codequake.page.start
