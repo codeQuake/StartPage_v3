@@ -23,7 +23,7 @@ class StartPageBoxListPage extends AbstractPage{
     public function assignVariables(){
         parent::assignVariables();
         
-        WCFACP::getMenu()->setActiveMenuItem('TODO!');
+        WCFACP::getMenu()->setActiveMenuItem('wbb.acp.menu.link.content.startpage');
         
         WCF::getTPL()->assign(array(
                                      'boxes' =>$this->startPageBoxes));
