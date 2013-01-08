@@ -7,7 +7,7 @@
     <date>2013-01-08</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
-    <plugin>com.woltlab.wbb</plugin>
+    <plugin>de.codequake.page.start</plugin>
   </packageinformation>
 
   <authorinformation>
@@ -17,6 +17,7 @@
 
   <requiredpackages>
     <requiredpackage minversion="2.1.0">com.woltlab.wbb</requiredpackage>
+    <requiredpackage minversion="3.0.0">de.codequake.page.start</requiredpackage>
   </requiredpackages>
 
   <optionalpackages />

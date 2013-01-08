@@ -33,7 +33,7 @@
                 <th>{lang}wbb.acp.startpage.boxlist.id{/lang}</th>                
                 <th>{lang}wbb.acp.startpage.boxlist.name{/lang}</th>
                 <th>{lang}wbb.acp.startpage.boxlist.type{/lang}</th>
-                <th>{lang}wbb.acp.startpage.boxlist.sortorder{/lang}</th>
+                <th>{lang}wbb.acp.startpage.boxlist.showorder{/lang}</th>
             </tr>
         </thead>
         <tbody id="boxList">
@@ -48,7 +48,7 @@
                             <img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wcf.acp.startpage.box.enable{/lang}" />
                      </a>
                     {else}
-                    <a href="index.php?action=StartPageDisbaleBox&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+                    <a href="index.php?action=StartPageDisableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
                         <img src="{@RELATIVE_WCF_DIR}icon/disabledS.png" alt="" title="{lang}wcf.acp.startpage.box.disable{/lang}" />
                      </a>
                     {/if}
