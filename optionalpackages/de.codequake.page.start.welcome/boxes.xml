@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <import>
+    <box>
+      <boxname>welcome</boxname>
+      <boxtype>left</boxtype>
+      <showorder>3</showorder>
+      <active>1</active>
+    </box>
+  </import>
+</data>
