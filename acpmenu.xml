@@ -9,7 +9,7 @@
       <parent>wbb.acp.menu.link.content.startpage</parent>
      <showorder>1</showorder>
       <link>index.php?page=StartPageBoxList</link>
-      <icon>icon/BoxListM.png</icon>
+      <icon>icon/boxListM.png</icon>
     </acpmenuitem>
   </import>
 </data>
