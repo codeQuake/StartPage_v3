@@ -17,7 +17,7 @@
 
   <requiredpackages>
     <requiredpackage minversion="2.1.0">com.woltlab.wbb</requiredpackage>
-    <requiredpackage minversion="3.0.0">de.codequake.page.start</requiredpackage>
+    <requiredpackage minversion="3.0.0 alpha 1">de.codequake.page.start</requiredpackage>
   </requiredpackages>
 
   <optionalpackages />

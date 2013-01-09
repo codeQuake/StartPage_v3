@@ -39,7 +39,7 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
                         
 						// default values
                         $boxName = '';
-                        $boxType = $showOrder = $active = 0;
+                        $boxType = $showOrder = $active = $event = 0;
                         
                         // make xml tags-names (keys in array) to lower case
 						$this->keysToLowerCase($box);
@@ -49,6 +49,7 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
                         if(isset($box['boxtype'])) $boxType = $box['boxtype'];
                         if(isset($box['showorder'])) $showOrder = intval($box['showorder']);
                         if(isset($box['active'])) $active = intval($box['active']);
+                        if(isset($box['event'])) $event = intval($box['event']);
                         
                         //insert & update
                         $sql = "INSERT INTO wbb".WBB_N."_startpageboxes
@@ -67,16 +68,19 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
                                 active = VALUES(active)";
                         WCF::getDB()->sendQuery($sql);
                         
-                        //set EventListener for Box
-                        $sql = "INSERT INTO			wcf".WCF_N."_event_listener
-											(packageID, environment, eventClassName, eventName, listenerClassFile)
-							VALUES				(".$this->installation->getPackageID().",
-											'user',
-										 	'startPage',
-											'assignVariables',
-											'lib/system/boxes/".escapeString($boxName)."Box.class.php')
-							ON DUPLICATE KEY UPDATE 	inherit = VALUES(inherit)";
-						WCF::getDB()->sendQuery($sql);
+                        if($event == 1)
+                        {
+                            //set EventListener for Box
+                            $sql = "INSERT INTO			wcf".WCF_N."_event_listener
+											    (packageID, environment, eventClassName, eventName, listenerClassFile)
+							    VALUES				(".$this->installation->getPackageID().",
+											    'user',
+										 	    'startPage',
+											    'assignVariables',
+											    'lib/system/boxes/".escapeString($boxName)."Box.class.php')
+							    ON DUPLICATE KEY UPDATE 	inherit = VALUES(inherit)";
+						    WCF::getDB()->sendQuery($sql);
+                        }
                      }
                  }       
             }

@@ -32,6 +32,7 @@
   <category name="wbb.acp.menu">
     <item name="wbb.acp.menu.link.content.startpage"><![CDATA[Startseite]]></item>
     <item name="wbb.acp.menu.link.content.startpage.list"><![CDATA[Liste der Boxen]]></item>
+    <item name="wbb.acp.menu.link.content.startpage.box.add"><![CDATA[Neue Box hinzufügen]]></item>
   </category>
 
 </language>
