@@ -53,19 +53,21 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
                         
                         //insert & update
                         $sql = "INSERT INTO wbb".WBB_N."_startpageboxes
-                                (boxName, boxType, showOrder, active)
+                                (boxName, boxType, showOrder, active, packageID)
                                 VALUES
                                 (
                                 '".escapeString($boxName)."',
                                 '".escapeString($boxType)."',
                                 ".$showOrder.",
-                                ".$active."
+                                ".$active.",
+                                ".$this->installation->getPackageID()."
                                 )
                                 ON DUPLICATE KEY UPDATE
                                 boxName = VALUES(boxName),
                                 boxType = VALUES(boxType),
                                 showOrder = VALUES(showOrder),
-                                active = VALUES(active)";
+                                active = VALUES(active),
+                                packageID = VALUES(packageID)";
                         WCF::getDB()->sendQuery($sql);
                         
                         if($event == 1)
@@ -86,14 +88,40 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
             }
         }    
     }
+     /**
+      * Determine wether data needs to be removed
+      * 	 
+      * @see	PackageInstallationPlugin::hasUninstall()
+      */
+     public function hasUninstall() {
+         if (($package = $this->installation->getPackage()->getParentPackage()) !== null && $package->getPackage() == 'com.woltlab.wbb') {
+             try {
+                 $instanceNo	= WCF_N.'_'.$package->getInstanceNo();
+                 $sql = "SELECT COUNT(*) AS count
+		  			FROM wbb".$instanceNo."_".$this->tableName."
+					WHERE packageID = ".$this->installation->getPackageID();
+                 $installationCount = WCF::getDB()->getFirstRow($sql);
+                 
+                 return $installationCount['count'];
+             }
+             catch (Exception $e) {
+                 return false;    
+             }
+         }
+         else return false;
+     }
+
     /**
      * @see PackageInstallationPlugin::uninstall()
      */
 	public function uninstall() {
-		parent::uninstall();
-		
+		$sql = "DELETE FROM  wbb".WBB_N."_startpageboxes WHERE packageID = ".$this->installation->getPackageID();
+        WCF::getDB()->sendQuery($sql);
+        $sql = "DELETE FROM  wcf".WCF_N."_event_listener WHERE packageID = ".$this->installation->getPackageID();
+        WCF::getDB()->sendQuery($sql);
 		// clear cache immediately
 		WCF::getCache()->clear(WCF_DIR.'cache', 'cache.eventListener-*.php');
+        
 	}
     }
 

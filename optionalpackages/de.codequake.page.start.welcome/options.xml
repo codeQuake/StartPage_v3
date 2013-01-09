@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+  <import>
+    <categories>
+      <category name="startpage.welcome">
+        <parent>startpage</parent>
+      </category>
+    </categories>
+
+    <options>
+      <option name="startpage_welcometext">
+        <categoryname>startpage.welcome</categoryname>
+        <optiontype>textarea</optiontype>
+      </option>
+      <option name="startpage_welcometext_allow_html">
+        <categoryname>startpage.welcome</categoryname>
+        <optiontype>boolean</optiontype>
+      </option>
+    </options>
+  </import>
+</data>

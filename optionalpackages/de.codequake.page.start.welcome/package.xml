@@ -7,7 +7,7 @@
     <date>2013-01-08</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
-    <plugin>de.codequake.page.start</plugin>
+    <plugin>com.woltlab.wbb</plugin>
   </packageinformation>
 
   <authorinformation>
@@ -25,5 +25,8 @@
   <instructions type="install">
     <!--XML-->
     <boxes>boxes.xml</boxes>
+    <options>options.xml</options>
+    <!--Archive-->
+    <templates>templates.tar</templates>
   </instructions>
 </package>
