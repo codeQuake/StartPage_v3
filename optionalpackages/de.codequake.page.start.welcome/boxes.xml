@@ -4,8 +4,9 @@
     <box>
       <boxname>welcome</boxname>
       <boxtype>left</boxtype>
-      <showorder>3</showorder>
+      <showorder>1</showorder>
       <active>1</active>
+      <event>0</event>
     </box>
   </import>
 </data>
