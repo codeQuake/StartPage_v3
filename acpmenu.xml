@@ -11,5 +11,11 @@
       <link>index.php?page=StartPageBoxList</link>
       <icon>icon/boxListM.png</icon>
     </acpmenuitem>
+    <acpmenuitem name="wbb.acp.menu.link.content.startpage.box.add">
+      <parent>wbb.acp.menu.link.content.startpage</parent>
+      <showorder>2</showorder>
+      <link>index.php?form=StartPageBoxAdd</link>
+      <icon>icon/boxAddM.png</icon>
+    </acpmenuitem>
   </import>
 </data>

@@ -41,15 +41,15 @@
             <tr class="{cycle values="container-1,container-2"}">
                 <td>
                     <!--TODO: can edit, can delete ;) -->
-                    <img src="{@RELATIVE_WCF_DIR}icon/editDisabledS.png" alt="" title="{lang}wcf.acp.startpage.box.edit{/lang}" />
-                    <img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wcf.acp.box.delete{/lang}" />
+                    <img src="{@RELATIVE_WCF_DIR}icon/editDisabledS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
+                    <img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
                     {if $box.active == 0}
                     <a href="index.php?action=StartPageEnableBox&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-                            <img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wcf.acp.startpage.box.enable{/lang}" />
+                            <img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wbb.acp.startpage.box.enable{/lang}" />
                      </a>
                     {else}
                     <a href="index.php?action=StartPageDisableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-                        <img src="{@RELATIVE_WCF_DIR}icon/disabledS.png" alt="" title="{lang}wcf.acp.startpage.box.disable{/lang}" />
+                        <img src="{@RELATIVE_WCF_DIR}icon/disabledS.png" alt="" title="{lang}wbb.acp.startpage.box.disable{/lang}" />
                      </a>
                     {/if}
                 </td>

@@ -5,6 +5,21 @@
     <item name="wbb.start.copyright"><![CDATA[<p class="smallFont startCopy"><a href="http://codequake.de">Plugin: <strong>Startseite</strong>, entwickelt von <strong>codeQuake</strong></a></p>]]></item>
   </category>
   
+  <category name="wbb.acp.startpage">
+    <item name="wbb.acp.startpage.boxlist"><![CDATA[Auflistung aller installierter Boxen]]></item>
+    <item name="wbb.acp.startpage.boxlist.id"><![CDATA[Box-ID]]></item>
+    <item name="wbb.acp.startpage.boxlist.name"><![CDATA[Name der Box]]></item>
+    <item name="wbb.acp.startpage.boxlist.type"><![CDATA[Box-Typ]]></item>
+    <item name="wbb.acp.startpage.boxlist.showorder"><![CDATA[Reihenfolge der Boxen]]></item>
+    <item name="wbb.acp.startpage.box.type.left"><![CDATA[Links]]></item>
+    <item name="wbb.acp.startpage.box.type.right"><![CDATA[Rechts]]></item>
+    <item name="wbb.acp.startpage.box.add"><![CDATA[Neue Box hinzufügen]]></item>
+    <item name="wbb.acp.startpage.box.edit"><![CDATA[Box bearbeiten]]></item>
+    <item name="wbb.acp.box.delete"><![CDATA[Box löschen]]></item>
+    <item name="wbb.acp.startpage.box.enable"><![CDATA[Box aktivieren]]></item>
+    <item name="wbb.acp.startpage.box.disable"><![CDATA[Box deaktivieren]]></item>
+  </category>
+  
   <category name="wcf.acp.option">
     <item name="wcf.acp.option.category.startpage"><![CDATA[Hauptseite]]></item>
     <item name="wcf.acp.option.category.startpage.description"></item>
