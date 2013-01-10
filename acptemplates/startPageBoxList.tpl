@@ -40,9 +40,17 @@
             {foreach from=$boxes item=box}
             <tr class="{cycle values="container-1,container-2"}">
                 <td>
-                    <!--TODO: can edit, can delete ;) -->
+                    {if $box.isDeletable == 0}
                     <img src="{@RELATIVE_WCF_DIR}icon/editDisabledS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
                     <img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
+					{else}
+					<a href="index.php?form=StartPageEditBox&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+						<img src="{@RELATIVE_WCF_DIR}icon/editS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
+					</a>
+					<a href="index.php?action=StartPageBoxDelete&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+						<img src="{@RELATIVE_WCF_DIR}icon/deleteS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
+					</a>
+					{/if}
                     {if $box.active == 0}
                     <a href="index.php?action=StartPageEnableBox&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
                             <img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wbb.acp.startpage.box.enable{/lang}" />
