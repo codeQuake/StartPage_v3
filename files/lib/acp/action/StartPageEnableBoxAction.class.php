@@ -1,6 +1,6 @@
 <?php
 // wcf imports
-require_once(WCF_DIR.'lib/action/AbstractAction.class.php';
+require_once(WCF_DIR.'lib/action/AbstractAction.class.php');
 
 /**
 ** Enables StartPage Box
