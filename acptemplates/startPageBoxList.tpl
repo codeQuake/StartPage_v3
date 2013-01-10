@@ -52,7 +52,7 @@
 					</a>
 					{/if}
                     {if $box.active == 0}
-                    <a href="index.php?action=StartPageEnableBox&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+                    <a href="index.php?action=StartPageEnableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
                             <img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wbb.acp.startpage.box.enable{/lang}" />
                      </a>
                     {else}
