@@ -5,6 +5,7 @@ require_once(WCF_DIR.'lib/page/AbstractPage.class.php');
 
 class StartPageBoxListPage extends AbstractPage{
     public $templateName = "startPageBoxList";
+    public $count = 0;
     
     //List of Boxes
     public $startPageBoxes = array();
@@ -17,6 +18,8 @@ class StartPageBoxListPage extends AbstractPage{
         while($row = WCF::getDB()->fetchArray($result)){
             $this->startPageBoxes[] = $row;
         }
+        $sql = "SELECT COUNT(boxID) AS count FROM wbb".WBB_N."_startpageboxes";
+        $this->count = WCF::getDB()->getFirstRow($sql);
         
     }
     
@@ -26,7 +29,8 @@ class StartPageBoxListPage extends AbstractPage{
         WCFACP::getMenu()->setActiveMenuItem('wbb.acp.menu.link.content.startpage');
         
         WCF::getTPL()->assign(array(
-                                     'boxes' =>$this->startPageBoxes));
+                                     'boxes' =>$this->startPageBoxes,
+                                     'boxCount' => $this->count['count']));
     }
     
 }
