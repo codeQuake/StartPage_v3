@@ -13,6 +13,11 @@
         <optiontype>boolean</optiontype>
         <defaultvalue>1</defaultvalue>
       </option>
+      <option name="admin.startpage.canDeleteBoxes">
+        <categoryname>admin.startpage</categoryname>
+        <optiontype>boolean</optiontype>
+        <defaultvalue>1</defaultvalue>
+      </option>
     </options>
   </import>
 </data>
