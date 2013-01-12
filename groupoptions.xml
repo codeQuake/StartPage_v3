@@ -8,6 +8,11 @@
     </categories>
 
     <options>
+      <option name="admin.startpage.canAddBoxes">
+        <categoryname>admin.startpage</categoryname>
+        <optiontype>boolean</optiontype>
+        <defaultvalue>1</defaultvalue>
+      </option>
       <option name="admin.startpage.canEditBoxes">
         <categoryname>admin.startpage</categoryname>
         <optiontype>boolean</optiontype>
