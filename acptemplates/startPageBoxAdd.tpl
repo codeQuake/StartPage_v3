@@ -1,7 +1,7 @@
-﻿{include file='header'}
+{include file='header'}
 
 <div class="mainHeadline">
-    <img src="{@RELATIVE_WCF_DIR}/icon/boxAddL.png" alt="" />
+    <img src="{@RELATIVE_WBB_DIR}/icon/boxAddL.png" alt="" />
     <div class="headlineContainer">
         <h2>{lang}wbb.acp.startpage.box.add{/lang}</h2>
     </div>
@@ -17,11 +17,11 @@
 
 <div class="contentHeader">
     <div class="largeButtons">
-        <ul><li><a href="index.php?page=StartPageBoxList&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}"><img src="{@RELATIVE_WCF_DIR}icon/boxListM.png" alt="" title="{lang}wbb.acp.menu.link.content.startpage.box.list{/lang}" /> <span>{lang}wwbb.acp.menu.link.content.startpage.box.list{/lang}</span></a></li></ul>
+        <ul><li><a href="index.php?page=StartPageBoxList&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}"><img src="{@RELATIVE_WCF_DIR}icon/boxListM.png" alt="" title="{lang}wbb.acp.menu.link.content.startpage.box.list{/lang}" /> <span>{lang}wbb.acp.menu.link.content.startpage.box.list{/lang}</span></a></li></ul>
     </div>
 </div>
 
-<form method="POST" action="index.php?form=StartPageBoxAdd">
+<form method="post" action="index.php?form=StartPageBoxAdd">
     <div class="border content">
         <div class="container-1">
             <fieldset>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="formField">
                         <input type="text" class="inputText" name="boxname" id="boxname" value="{$boxname}" />
-                        {if $errorField = 'boxname'}
+                        {if $errorField == 'boxname'}
                             <p class="innerError">
                                 {if $errorType == 'empty'}{lang}wcf.global.error.empty{/lang}{/if}
                                 {if $errorType == 'notUnique'}{lang}wbb.acp.startpage.box.name.error.notunique{/lang}{/if}
@@ -49,7 +49,7 @@
                             <option value="left" {if $boxtype == 'left'} selected ="selected"{/if}>{lang}wbb.acp.startpage.box.type.left{/lang}</option>
                             <option value="right" {if $boxtype == 'right'} selected ="selected"{/if}>{lang}wbb.acp.startpage.box.type.right{/lang}</option>
                         </select>
-                        {if $errorField = 'boxtype'}
+                        {if $errorField == 'boxtype'}
                             <p class="innerError">
                                 {if $errorType == 'empty'}{lang}wcf.global.error.empty{/lang}{/if}
                             </p>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="formField">
                         <textarea name="source" id="source" rows="20" cols="40" wrap="off">{$source}</textarea>
-                        {if $errorField = 'source'}
+                        {if $errorField == 'source'}
                             <p class="innerError">
                                 {if $errorType == 'empty'}{lang}wcf.global.error.empty{/lang}{/if}
                             </p>
@@ -76,8 +76,8 @@
         <input type="submit" accesskey="s" value="{lang}wcf.global.button.submit{/lang}" />
         <input type="reset" accesskey="r" value="{lang}wcf.global.button.reset{/lang}" />
         <input type="hidden" name="packageID" value="{@PACKAGE_ID}" />
+		{@SID_INPUT_TAG}
     </div>
 </form>
 
 {include file='footer'}
-</form>

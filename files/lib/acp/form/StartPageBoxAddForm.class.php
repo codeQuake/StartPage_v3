@@ -30,7 +30,7 @@ class StartPageBoxAddForm extends ACPForm{
         
         //check TemplateName
         $sql = "SELECT count(*) AS count
-                FROM wcf".WCF_N."_template_name
+                FROM wcf".WCF_N."_template
                 WHERE packageID = ".PACKAGE_ID."
                 AND templateName = '".escapestring($this->boxname)."'";
         $row = WCF::getDB()->getFirstRow($sql);
@@ -51,8 +51,8 @@ class StartPageBoxAddForm extends ACPForm{
     
     public function validate(){
         parent::validate();
-        checkBoxName();
-        if(empty($source)){
+        $this->checkBoxName();
+        if(empty($this->source)){
             throw new UserInputException('source'); 
         }
      }
@@ -64,8 +64,8 @@ class StartPageBoxAddForm extends ACPForm{
                                 (boxName, boxType, packageID)
                                 VALUES
                                 (
-                                '".escapeString($this->boxName)."',
-                                '".escapeString($this->boxType)."',
+                                '".escapeString($this->boxname)."',
+                                '".escapeString($this->boxtype)."',
                                 ".PACKAGE_ID."
                                 )";
         WCF::getDB()->sendQuery($sql);
@@ -73,7 +73,7 @@ class StartPageBoxAddForm extends ACPForm{
         // save template
         $this->box = TemplateEditor::create($this->boxname, $this->source, 0);
         
-        // reset cache
+        //reset cache
         WCF::getCache()->clear(WCF_DIR . 'cache', 'cache.templates-*.php');
         
         //reset values
