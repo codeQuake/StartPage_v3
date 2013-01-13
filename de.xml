@@ -24,6 +24,9 @@
     <item name="wbb.acp.box.delete"><![CDATA[Box löschen]]></item>
     <item name="wbb.acp.startpage.box.enable"><![CDATA[Box aktivieren]]></item>
     <item name="wbb.acp.startpage.box.disable"><![CDATA[Box deaktivieren]]></item>
+    <item name="wbb.acp.startpage.box.add.success"><![CDATA[Die neue Box wurde erfolgreich hinzugefügt!]]></item>
+    <item name="wbb.acp.startpage.boxlist.source"><![CDATA[Template-Quelltext]]></item>
+    <item name="wbb.acp.startpage.box.name.error.notunique"><![CDATA[Der Name muss eindeutig sein. Der eingegebene Name wird schon benutzt!]]></item>
   </category>
   
   <category name="wcf.acp.option">

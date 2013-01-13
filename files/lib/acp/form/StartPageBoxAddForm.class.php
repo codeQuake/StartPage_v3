@@ -61,12 +61,13 @@ class StartPageBoxAddForm extends ACPForm{
         parent::save();
         //save box
         $sql = "INSERT INTO wbb".WBB_N."_startpageboxes
-                                (boxName, boxType, packageID)
+                                (boxName, boxType, packageID,isDeletable)
                                 VALUES
                                 (
                                 '".escapeString($this->boxname)."',
                                 '".escapeString($this->boxtype)."',
-                                ".PACKAGE_ID."
+                                ".PACKAGE_ID.",
+                                1
                                 )";
         WCF::getDB()->sendQuery($sql);
         

@@ -40,27 +40,29 @@
 			<tbody id="boxList">
 				{foreach from=$boxes item=box}
 				<tr class="{cycle values="container-1,container-2"}">
-					<td>
-						{if $box.isDeletable == 0}
-						<img src="{@RELATIVE_WCF_DIR}icon/editDisabledS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
-						<img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
-						{else}
-						<a href="index.php?form=StartPageEditBox&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-							<<img src="{@RELATIVE_WCF_DIR}icon/editS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
-						</a>
-						<a href="index.php?action=StartPageBoxDelete&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-							<img src="{@RELATIVE_WCF_DIR}icon/deleteS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
-						</a>
-						{/if}
-						{if $box.active == 0}
-						<a href="index.php?action=StartPageEnableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-								<img src="{@RELATIVE_WCF_DIR}icon/disabledS.png" alt="" title="{lang}wbb.acp.startpage.box.enable{/lang}" />
-						 </a>
-						{else}
-						<a href="index.php?action=StartPageDisableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-							<img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wbb.acp.startpage.box.disable{/lang}" />
-						 </a>
-						{/if}
+					<td class="columnIcon">
+						<div class="buttons">
+							{if $box.isDeletable == 0}
+							<img src="{@RELATIVE_WCF_DIR}icon/editDisabledS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
+							<img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
+							{else}
+							<a href="index.php?form=StartPageEditBox&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+								<img src="{@RELATIVE_WCF_DIR}icon/editS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
+							</a>
+							<a href="index.php?action=StartPageBoxDelete&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+								<img src="{@RELATIVE_WCF_DIR}icon/deleteS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
+							</a>
+							{/if}
+							{if $box.active == 0}
+							<a href="index.php?action=StartPageEnableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+									<img src="{@RELATIVE_WCF_DIR}icon/disabledS.png" alt="" title="{lang}wbb.acp.startpage.box.enable{/lang}" />
+							 </a>
+							{else}
+							<a href="index.php?action=StartPageDisableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+								<img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wbb.acp.startpage.box.disable{/lang}" />
+							 </a>
+							{/if}
+						</div>
 					</td>
 					<td>
 						{$box.boxName}

@@ -17,7 +17,7 @@
 
 <div class="contentHeader">
     <div class="largeButtons">
-        <ul><li><a href="index.php?page=StartPageBoxList&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}"><img src="{@RELATIVE_WCF_DIR}icon/boxListM.png" alt="" title="{lang}wbb.acp.menu.link.content.startpage.box.list{/lang}" /> <span>{lang}wbb.acp.menu.link.content.startpage.box.list{/lang}</span></a></li></ul>
+        <ul><li><a href="index.php?page=StartPageBoxList&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}"><img src="{@RELATIVE_WBB_DIR}icon/boxListM.png" alt="" title="{lang}wbb.acp.menu.link.content.startpage.box.list{/lang}" /> <span>{lang}wbb.acp.menu.link.content.startpage.list{/lang}</span></a></li></ul>
     </div>
 </div>
 
