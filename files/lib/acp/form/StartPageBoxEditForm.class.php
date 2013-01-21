@@ -21,7 +21,7 @@ class StartPageBoxEditForm extends ACPForm{
     
     public function readParameters(){
         parent::readParameters();
-        if(isset($_REQUEST['boxID'])) $this->boxID = intval($_REQUEST['boxID']);
+        if(isset($_GET['boxID'])) $this->boxID = intval($_GET['boxID']);
         
     }
     
@@ -45,45 +45,15 @@ class StartPageBoxEditForm extends ACPForm{
     public function readFormParameters(){
         parent::readFormParameters();
         
-        if(isset($_POST['boxname'])) $this->boxname = StringUtil::trim($_POST['boxname']); 
         if(isset($_POST['boxtype'])) $this->boxtype = StringUtil::trim($_POST['boxtype']); 
         if(isset($_POST['source'])) $this->source = $_POST['source'];
+        
+        if(isset($_GET['boxID'])) $this->boxID = intval($_GET['boxID']);
     }
    
     
-    protected function checkBoxName(){
-    
-        //check if boxname is empty
-        if(empty($this->boxname)){
-            throw new UserInputException('boxname');
-        }
-        
-        //check TemplateName
-        $sql = "SELECT count(*) AS count
-                FROM wcf".WCF_N."_template
-                WHERE packageID = ".PACKAGE_ID."
-                AND templateName = '".escapestring($this->boxname)."'
-                AND templateID != ".$this->templateID;
-        $row = WCF::getDB()->getFirstRow($sql);
-        if($row['count']){
-            throw new UserInputException('boxname', 'notUnique');
-        }
-        
-        //check boxname
-        $sql = "SELECT count(*) AS count
-                FROM wbb".WBB_N."_startpageboxes
-                WHERE boxname = '".escapestring($this->boxname)."'
-                AND boxID != ".$this->boxID;
-        $row = WCF::getDB()->getFirstRow($sql);
-        if($row['count']){
-            throw new UserInputException('boxname', 'notUnique');
-        }
-        
-    }
-    
     public function validate(){
         parent::validate();
-        $this->checkBoxName();
         if(empty($this->source)){
             throw new UserInputException('source'); 
         }
@@ -93,13 +63,18 @@ class StartPageBoxEditForm extends ACPForm{
         parent::save();
         //save box
         $sql = "UPDATE wbb".WBB_N."_startpageboxes
-                SET boxName = '".escapeString($this->boxname)."',
-                    boxType = '".escapeString($this->boxtype)."'
+                SET boxType = '".escapeString($this->boxtype)."'
                 WHERE boxID = ".$this->boxID;
         WCF::getDB()->sendQuery($sql);
         
         // save template
-        $this->box = this->template->update($this->boxname, $this->source, 0);
+        $sql = "SELECT templateID 
+                FROM wcf".WCF_N."_template
+                WHERE templateName = '".$this->boxname."'";
+        $row = WCF::getDB()->getFirstRow($sql);
+        $this->templateID = $row['templateID'];
+        $this->template = new TemplateEditor($this->templateID);
+        $this->box = $this->template->update($this->boxname, $this->source, 0);
         
         //reset cache
         WCF::getCache()->clear(WCF_DIR . 'cache', 'cache.templates-*.php');
@@ -114,6 +89,7 @@ class StartPageBoxEditForm extends ACPForm{
         parent::assignVariables();
         WCF::getTPL()->assign(array('boxname' => $this->boxname,
                                     'boxtype' => $this->boxtype,
+                                    'boxID' => $this->boxID,
                                     'source' => $this->source));
     }
    
