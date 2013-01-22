@@ -27,6 +27,7 @@
     <item name="wbb.acp.startpage.box.delete"><![CDATA[Box löschen]]></item>
     <item name="wbb.acp.startpage.box.delete.sure"><![CDATA[Sind sie sicher, dass sie diese Box löschen möchten?]]></item>
     <item name="wbb.acp.startpage.box.add.success"><![CDATA[Die neue Box wurde erfolgreich hinzugefügt!]]></item>
+    <item name="wbb.acp.startpage.box.edit.success"><![CDATA[Ihre Änderungen wurden erfolgreich gespeichert.]]></item>
     <item name="wbb.acp.startpage.boxlist.source"><![CDATA[Template-Quelltext]]></item>
     <item name="wbb.acp.startpage.box.name.error.notunique"><![CDATA[Der Name muss eindeutig sein. Der eingegebene Name wird schon benutzt!]]></item>
   </category>

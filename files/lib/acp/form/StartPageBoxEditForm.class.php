@@ -68,13 +68,14 @@ class StartPageBoxEditForm extends ACPForm{
         WCF::getDB()->sendQuery($sql);
         
         // save template
+        $box = new StartPageBox($this->boxID);
         $sql = "SELECT templateID 
                 FROM wcf".WCF_N."_template
-                WHERE templateName = '".$this->boxname."'";
+                WHERE templateName = '".$box->boxName."'";
         $row = WCF::getDB()->getFirstRow($sql);
         $this->templateID = $row['templateID'];
         $this->template = new TemplateEditor($this->templateID);
-        $this->box = $this->template->update($this->boxname, $this->source, 0);
+        $this->box = $this->template->update($box->boxName, $this->source, 0);
         
         //reset cache
         WCF::getCache()->clear(WCF_DIR . 'cache', 'cache.templates-*.php');
