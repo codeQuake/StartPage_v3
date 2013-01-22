@@ -44,21 +44,21 @@
 						<div class="buttons">
 							{if $box.isDeletable == 0}
 							<img src="{@RELATIVE_WCF_DIR}icon/editDisabledS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
-							<img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
+							<img src="{@RELATIVE_WCF_DIR}icon/deleteDisabledS.png" alt="" title="{lang}wbb.acp.startpage.box.delete{/lang}" />
 							{else}
 							<a href="index.php?form=StartPageBoxEdit&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
 								<img src="{@RELATIVE_WCF_DIR}icon/editS.png" alt="" title="{lang}wbb.acp.startpage.box.edit{/lang}" />
 							</a>
-							<a href="index.php?action=StartPageBoxDelete&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
-								<img src="{@RELATIVE_WCF_DIR}icon/deleteS.png" alt="" title="{lang}wbb.acp.box.delete{/lang}" />
+							<a onclick="return confirm('{lang}wbb.acp.startpage.box.delete.sure{/lang}')" href="index.php?action=StartPageBoxDelete&boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+								<img src="{@RELATIVE_WCF_DIR}icon/deleteS.png" alt="" title="{lang}wbb.acp.startpage.box.delete{/lang}" />
 							</a>
 							{/if}
 							{if $box.active == 0}
-							<a href="index.php?action=StartPageEnableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+							<a href="index.php?action=StartPageBoxEnable&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
 									<img src="{@RELATIVE_WCF_DIR}icon/disabledS.png" alt="" title="{lang}wbb.acp.startpage.box.enable{/lang}" />
 							 </a>
 							{else}
-							<a href="index.php?action=StartPageDisableBox&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
+							<a href="index.php?action=StartPageBoxDisable&amp;boxID={$box.boxID}&amp;packageID={@PACKAGE_ID}{@SID_ARG_2ND}">
 								<img src="{@RELATIVE_WCF_DIR}icon/enabledS.png" alt="" title="{lang}wbb.acp.startpage.box.disable{/lang}" />
 							 </a>
 							{/if}

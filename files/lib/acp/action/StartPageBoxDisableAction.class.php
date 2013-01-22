@@ -9,7 +9,7 @@ require_once(WCF_DIR.'lib/action/AbstractAction.class.php');
 ** @package: de.codequake.page.start
 **/
 
-class StartPageDisableBoxAction extends AbstractAction{
+class StartPageBoxDisableAction extends AbstractAction{
     public $boxID = 0;
     
     public function readParameters(){
