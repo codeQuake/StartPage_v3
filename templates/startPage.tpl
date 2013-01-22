@@ -46,6 +46,7 @@
 				</div>
 			</div>
 		</div>
+		{lang}wbb.start.copyright{/lang}
 	</div>
 	{include file='footer' sandbox=false}
 </body>
