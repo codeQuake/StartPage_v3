@@ -23,6 +23,9 @@ class StartPageBoxDeleteAction extends AbstractAction{
         parent::execute();
         $box = new StartPageBox($this->boxID);
         
+        //you can not edit plugin boxes
+        if($box->isDeletable == 0) throw new IllegalLinkException();
+        
         //get Template & delete
         $sql = "SELECT templateID 
                 FROM wcf".WCF_N."_template
