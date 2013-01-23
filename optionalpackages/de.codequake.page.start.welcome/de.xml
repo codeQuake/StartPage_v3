@@ -7,7 +7,7 @@
   <category name="wcf.acp.option">
     <item name="wcf.acp.option.category.startpage.welcome"><![CDATA[Willkommensbox]]></item>
     <item name="wcf.acp.option.category.startpage.welcome.description"><![CDATA[]]></item>
-    <item name=" wcf.acp.option.startpage_welcometext"><![CDATA[Willkommenstext]]></item>
+    <item name="wcf.acp.option.startpage_welcometext"><![CDATA[Willkommenstext]]></item>
     <item name="wcf.acp.option.startpage_welcometext.description"><![CDATA[Willkommenstext, der dem Benutzer angezeigt wird, wenn er die Seite besucht]]></item>
     <item name="wcf.acp.option.startpage_welcometext_allow_html"><![CDATA[HTML-Code in Willkommenstext erlauben]]></item>
     <item name="wcf.acp.option.startpage_welcometext_allow_html.description"><![CDATA[]]></item>
