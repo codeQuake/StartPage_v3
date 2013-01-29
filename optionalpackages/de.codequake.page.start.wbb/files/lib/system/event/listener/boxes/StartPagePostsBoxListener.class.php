@@ -14,8 +14,6 @@ class StartPagePostsBoxListener implements EventListener{
         }
         $boardIDs = implode(',', $boardIDs);
         $this->posts = new ThreadList();
-        $this->posts->sqlSelects .=  " wbb".WBB_N."_board.title,";
-        $this->posts->sqlJoins .= " LEFT JOIN wbb".WBB_N."_board ON wbb".WBB_N."_board.boardID = thread.boardID";
         $this->posts->sqlConditions .= "boardID IN(".$boardIDs.") AND boardID NOT IN (".STARTPAGE_BOARDS_EXCLUDE.") AND isDisabled = 0 AND movedThreadID = 0";
         $this->posts->limit = STARTPAGE_TOPX_LIMIT;
         $this->posts->readThreads();
