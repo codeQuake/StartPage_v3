@@ -2,7 +2,7 @@
 <data>
   <import>
     <box>
-      <boxname>Posts</boxname>
+      <boxname>posts</boxname>
       <boxtype>right</boxtype>
       <showorder>1</showorder>
       <active>1</active>

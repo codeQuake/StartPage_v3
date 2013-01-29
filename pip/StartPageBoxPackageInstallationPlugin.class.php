@@ -79,7 +79,7 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
 											    'user',
 										 	    'startPage',
 											    'assignVariables',
-											    'lib/system/boxes/".escapeString($boxName)."Box.class.php')
+											    'lib/system/boxes/".escapeString(ucfirst($boxName))."BoxListener.class.php')
 							    ON DUPLICATE KEY UPDATE 	inherit = VALUES(inherit)";
 						    WCF::getDB()->sendQuery($sql);
                         }
