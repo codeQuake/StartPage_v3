@@ -8,6 +8,21 @@
     </categories>
 
     <options>
+      <option name="startpage_boards_exclude">
+        <categoryname>startpage.posts</categoryname>
+        <optiontype>text</optiontype>
+        <defaultvalue>0</defaultvalue>
+      </option>
+      <option name="startpage_topx_limit">
+        <categoryname>startpage.posts</categoryname>
+        <optiontype>integer</optiontype>
+        <defaultvalue>5</defaultvalue>
+      </option>
+      <option name="startpage_topic_limit">
+        <categoryname>startpage.posts</categoryname>
+        <optiontype>integer</optiontype>
+        <defaultvalue>55</defaultvalue>
+      </option>
     </options>
   </import>
 </data>
