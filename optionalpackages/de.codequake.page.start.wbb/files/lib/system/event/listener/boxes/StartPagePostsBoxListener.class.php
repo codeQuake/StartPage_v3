@@ -20,7 +20,7 @@ class StartPagePostsBoxListener implements EventListener{
         return $this->posts->threads;
     }
     
-    public function execute($eventObj, $className, $eventName){
+    public function execute($eventObj, $className, $eventName) {
         WCF::getTPL()->assign(array('threads' => $this->getThreads()));
     }
     

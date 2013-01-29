@@ -26,7 +26,6 @@
     <!--XML-->
     <boxes>boxes.xml</boxes>
     <options>options.xml</options>
-    <languages languagecode="de">de.xml</languages>
     <!--Archive-->
     <templates>templates.tar</templates>
     <files>files.tar</files>

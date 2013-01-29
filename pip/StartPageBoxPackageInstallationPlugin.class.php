@@ -77,7 +77,7 @@ class StartPageBoxPackageInstallationPlugin extends AbstractXMLPackageInstallati
 											    (packageID, environment, eventClassName, eventName, listenerClassFile)
 							    VALUES				(".$this->installation->getPackageID().",
 											    'user',
-										 	    'startPage',
+										 	    'StartPage',
 											    'assignVariables',
 											    'lib/system/event/listener/boxes/StartPage".escapeString(ucfirst($boxName))."BoxListener.class.php')
 							    ON DUPLICATE KEY UPDATE 	inherit = VALUES(inherit)";

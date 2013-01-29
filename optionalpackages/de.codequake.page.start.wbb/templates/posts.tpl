@@ -10,7 +10,7 @@
            {else}
                 {cycle name=messageCycle values='1' print=false}
         {/if}
-        {foreach from=$threads item=thread
+        {foreach from=$threads item=thread}
             <li class="container-{cycle name=messageCycle}">
                 <div class="containerIcon">
                     <img src="{icon}{$thread->getIconName()}M.png{/icon}" alt="" />
@@ -24,14 +24,14 @@
                             <span class="topic">
                                 {$thread->topic|truncate:STARTPAGE_TOPIC_LIMIT:"..."}
                             </span>
-                        </a>
-                         <span class="light">
+                        </a>                         
+                    </p>
+                    <p class="firstPost light">
                              <a href="index.php?page=User&amp;userID={$thread->lastPosterID}{@SID_ARG_2ND}">
                                  {$thread->lastPoster}
                              </a>
                                ({@$thread->lastPostTime|time})
-                        </span>
-                    </p>
+                  </p>
                     
                 </div>
             </li>
