@@ -13,14 +13,24 @@
         <div class="message threadNo-{$entry->threadID}">
             <div class="messageHeader">
                 <div class="containerIcon">
-                    <img src="{icon}newsM.png{/icon}" alt="" />
+                    <img src="{icon}newsL.png{/icon}" alt="" />
                 </div>
                 <div class="containerContent">
-                    <a href="index.php?page=User&amp;userID={$entry->userID}">{$entry->username}</a> ({@$entry->time|time})
+                    <h3 class="messageTitle">
+                        {$entry->prefix}{$entry->topic}
+                    </h3>
+                    <p class="smallFont">
+                        <a href="index.php?page=User&amp;userID={$entry->userID}">
+                            {$entry->username}
+                        </a> 
+                        ({@$entry->time|time})
+                    </p>
                 </div>
             </div>
-            <div class="messageBody">
-                {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
+            <div class="messageContent">
+                <div class="messageContentInner">
+                    {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
+                </div>
             </div>
         </div>
     {/foreach}
