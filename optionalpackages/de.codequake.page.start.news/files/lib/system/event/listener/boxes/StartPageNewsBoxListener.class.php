@@ -40,7 +40,7 @@ class StartPageNewsBoxListener implements EventListener{
         $this->news = $this->getNews();
         
         //get vars into tpl ;)
-        WCF::getTPL()->assign(array('news' => $news,
+        WCF::getTPL()->assign(array('news' => $this->news,
                                     'parser' => $parser));
     }
 }

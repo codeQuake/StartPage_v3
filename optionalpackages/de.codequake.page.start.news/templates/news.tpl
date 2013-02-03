@@ -10,13 +10,13 @@
     {/if}
 
     {foreach from=$news item=entry}
-        <div class="message threadNo-{entry.threadID}">
+        <div class="message threadNo-{$entry->threadID}">
             <div class="messageHeader">
                 <div class="containerIcon">
                     <img src="{icon}newsM.png{/icon}" alt="" />
                 </div>
                 <div class="containerContent">
-                    <a href="index.php?page=User&amp;userID={$entry.userID}">{$entry.username}</a> ({@$entry->time|time})
+                    <a href="index.php?page=User&amp;userID={$entry->userID}">{$entry->username}</a> ({@$entry->time|time})
                 </div>
             </div>
             <div class="messageBody">
