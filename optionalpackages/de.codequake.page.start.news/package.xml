@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package name="de.codequake.page.start.wbb" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+<package name="de.codequake.page.start.news" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
   <packageinformation>
-    <packagename>Startseite: Letzte Themen</packagename>
-    <packagedescription><![CDATA[Letzte Themen für die Startseite]]></packagedescription>
-    <version>2.0.0 beta 1</version>
-    <date>2013-01-23</date>
+    <packagename>Startseite: Forennews</packagename>
+    <packagedescription><![CDATA[Neuigkeiten für die Startseite]]></packagedescription>
+    <version>2.0.0 dev 1</version>
+    <date>2013-02-03</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
     <plugin>com.woltlab.wbb</plugin>
@@ -26,7 +26,6 @@
     <!--XML-->
     <boxes>boxes.xml</boxes>
     <options>options.xml</options>
-    <languages languagecode="de">de.xml</languages>
     <!--Archive-->
     <templates>templates.tar</templates>
     <files>files.tar</files>
