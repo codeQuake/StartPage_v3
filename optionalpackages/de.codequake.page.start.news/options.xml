@@ -13,7 +13,7 @@
         <optiontype>integer</optiontype>
         <defaultvalue>5</defaultvalue>
       </option>
-      <option name="startpage_news_boardid">
+      <option name="startpage_news_boards">
         <categoryname>startpage.news</categoryname>
         <optiontype>text</optiontype>
         <defaultvalue>0</defaultvalue>
