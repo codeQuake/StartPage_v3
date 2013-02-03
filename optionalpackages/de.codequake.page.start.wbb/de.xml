@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+  <category name="wbb.start">
+    <item name="wbb.start.posts.title"><![CDATA[Die letzten {STARTPAGE_TOPX_LIMIT} Themen]]></item>
+  </category>
+
+  <category name="wcf.acp.option">
+    <item name="wcf.acp.option.category.startpage.posts"><![CDATA[Letzte Themen Box]]></item>
+    <item name="wcf.acp.option.category.startpage.posts.description"><![CDATA[]]></item>
+    <item name="wcf.acp.option.startpage_boards_exclude"><![CDATA[Auszuschließende Foren]]></item>
+    <item name="wcf.acp.option.startpage_boards_exclude.description"><![CDATA[Geben Sie hier die Foren-IDs der Foren an, die Sie von der Anzeige ausschließen wollen. Mehrere IDs müssen durch Kommata getrennt werden. Geben Sie 0 an, um alle Foren einzuschließen.]]></item>
+    <item name="wcf.acp.option.startpage_topx_limit"><![CDATA[Anzahl der Themen]]></item>
+    <item name="wcf.acp.option.startpage_topx_limit.description"><![CDATA[Geben Sie die Anzahl der anzuzeigenden Themen an.]]></item>
+    <item name="wcf.acp.option.startpage_topic_limit"><![CDATA[Zeichenlimit]]></item>
+    <item name="wcf.acp.option.startpage_topic_limit.description"><![CDATA[Nach wie vielen Zeichen soll der Thementitel gekürzt werden?]]></item>
+  </category>
+</language>
