@@ -1,0 +1,19 @@
+--- C:/Users/Jenso/Desktop/header.tpl	Sat Oct 16 01:19:47 2010
++++ C:/Users/Jenso/Desktop/header - Kopie.tpl	Sat Oct 16 01:23:59 2010
+@@ -184,13 +184,13 @@
+ 		</div>
+ 		<div id="logo">
+ 			<div class="logoInner">
+-				<h1 class="pageTitle"><a href="index.php?page=Index{@SID_ARG_2ND}">{lang}{PAGE_TITLE}{/lang}</a></h1>
++				<h1 class="pageTitle"><a href="index.php?page=Start{@SID_ARG_2ND}">{lang}{PAGE_TITLE}{/lang}</a></h1>
+ 				{if $this->getStyle()->getVariable('page.logo.image')}
+-					<a href="index.php?page=Index{@SID_ARG_2ND}" class="pageLogo">
++					<a href="index.php?page=Start{@SID_ARG_2ND}" class="pageLogo">
+ 						<img src="{$this->getStyle()->getVariable('page.logo.image')}" title="{lang}{PAGE_TITLE}{/lang}" alt="" />
+ 					</a>
+ 				{elseif $this->getStyle()->getVariable('page.logo.image.application.use') == 1}
+-					<a href="index.php?page=Index{@SID_ARG_2ND}" class="pageLogo">
++					<a href="index.php?page=Start{@SID_ARG_2ND}" class="pageLogo">
+ 						<img src="{@RELATIVE_WBB_DIR}images/wbblite2-header-logo.png" title="{lang}{PAGE_TITLE}{/lang}" alt="" />
+ 					</a>
+ 				{/if}

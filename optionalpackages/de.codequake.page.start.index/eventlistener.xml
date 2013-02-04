@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "DTD/language.dtd">
+<data>	
+	<import>
+		<eventlistener>
+			<eventClassName>SessionFactory</eventClassName>
+			<eventName>shouldInit</eventName>
+			<listenerClassFile>lib/system/event/listener/StartPagePageLocationListener.class.php</listenerClassFile>
+			<inherit>1</inherit>
+		</eventlistener>
+	</import>
+</data>

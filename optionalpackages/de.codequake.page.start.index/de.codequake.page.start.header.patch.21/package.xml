@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package name="de.codequake.page.start.header.patch.21">
+<packageinformation>
+<packagename>Startseite: als Startseite Patch</packagename>
+<packagedescription>WBBLite2.1 Version</packagedescription>
+<version>2.0.0</version>
+<date>2010-10-16</date>
+<plugin>com.woltlab.wbb</plugin>
+<standalone>0</standalone>
+<isunique>1</isunique>
+</packageinformation>
+
+<authorinformation>
+<author>Jens Krumsieck</author>
+<authorurl>http://jenso.webdiggi.de</authorurl>
+</authorinformation>
+
+<requiredpackages>
+<requiredpackage>de.codequake.page.start</requiredpackage>
+<requiredpackage minversion="2.1.0 RC 2">com.woltlab.wbb</requiredpackage>
+</requiredpackages>
+
+<instructions type="install">
+<templatepatch>header.diff</templatepatch>
+</instructions>
+
+</package>

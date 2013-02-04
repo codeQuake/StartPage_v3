@@ -24,6 +24,7 @@
     <optionalpackage file='optionals/de.codequake.page.start.wbb.tar'>de.codequake.page.start.wbb</optionalpackage>
     <optionalpackage file='optionals/de.codequake.page.start.news.tar'>de.codequake.page.start.news</optionalpackage>
     <optionalpackage file='optionals/de.codequake.page.start.stats.tar'>de.codequake.page.start.stats</optionalpackage>
+    <optionalpackage file='optionals/de.codequake.page.start.index.tar'>de.codequake.page.start.index</optionalpackage>
   </optionalpackages>
 
   <instructions type="install">
