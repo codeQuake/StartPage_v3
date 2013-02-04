@@ -27,30 +27,30 @@
               </div>
               <div class="messageContent newsContent" style="border-style: none;">
                 <div class="messageContentInner">
-                
-                  {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
-                </div>
-              </div>
-          </div>
-          <!--<div class="messageHeader">
-                <div class="containerIcon">
-                    <img src="{icon}newsL.png{/icon}" alt="" />
-                </div>
-                <div class="containerContent">
-                    
-                    <p class="smallFont">
-                        <a href="index.php?page=User&amp;userID={$entry->userID}">
-                            {$entry->username}
-                        </a> 
-                        ({@$entry->time|time})
-                    </p>
-                </div>
-            </div>
-            <div class="messageContent">
-                <div class="messageContentInner">
                     {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
                 </div>
-            </div>-->
+              </div>
+            <div class="messageFooter">
+              <div class="smallButtons">
+                <ul>
+                  <li>
+                    <a href="index.php?page=Thread&amp;threadID={$entry->threadID}{@SID_ARG_2ND}">
+                      <span>
+                        <img src="{icon}userRank1S.png{/icon}" alt="" /> {lang}wbb.start.news.continue{/lang}
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index.php?page=Thread&amp;threadID={$entry->threadID}{@SID_ARG_2ND}">
+                      <span>
+                        <img src="{icon}commentS.png{/icon}" alt="" /> {lang}wbb.start.news.comments{/lang}
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
     {/foreach}
 </div>

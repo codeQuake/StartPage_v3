@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+  <category name="wbb.start">
+    <item name="wbb.start.news.title"><![CDATA[News]]></item>
+    <item name="wbb.start.news.entry.by">
+      <![CDATA[by      <a href="index.php?page=User&amp;userID={$entry->userID}">
+                            {$entry->username}
+                        </a> ({@$entry->time|time})
+               <br/>in <a href="index.php?page=Board&amp;boardID={$entry->boardID}">{$entry->title}</a>]]></item>
+    <item name="wbb.start.news.continue"><![CDATA[continue...]]></item>
+    <item name="wbb.start.news.comments"><![CDATA[{if $entry->replies != 1}{$entry->replies} Comments{else}1 Comment{/if}]]></item>
+  </category>
+
+  <category name="wcf.acp.option">
+    <item name="wcf.acp.option.category.startpage.news"><![CDATA[News Box]]></item>
+    <item name="wcf.acp.option.category.startpage.news.description"><![CDATA[]]></item>
+    <item name="wcf.acp.option.startpage_news_limit"><![CDATA[Newscount]]></item>
+    <item name="wcf.acp.option.startpage_news_limit.description"><![CDATA[How many News should by visible?]]></item>
+    <item name="wcf.acp.option.startpage_news_boards"><![CDATA[Board for News]]></item>
+    <item name="wcf.acp.option.startpage_news_boards.description"><![CDATA[Enter your Board-IDs.]]></item>
+  </category>
+</language>

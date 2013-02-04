@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+  <category name="wbb.start">
+    <item name="wbb.start.posts.title"><![CDATA[Latest {STARTPAGE_TOPX_LIMIT} Threads]]></item>
+  </category>
+
+  <category name="wcf.acp.option">
+    <item name="wcf.acp.option.category.startpage.posts"><![CDATA[Latest Threads Box]]></item>
+    <item name="wcf.acp.option.category.startpage.posts.description"><![CDATA[]]></item>
+    <item name="wcf.acp.option.startpage_boards_exclude"><![CDATA[Exclude Boards]]></item>
+    <item name="wcf.acp.option.startpage_boards_exclude.description"><![CDATA[Enter the boardIDs of the boards you want to exclude. Default = 0]]></item>
+    <item name="wcf.acp.option.startpage_topx_limit"><![CDATA[Amount of threads]]></item>
+    <item name="wcf.acp.option.startpage_topx_limit.description"><![CDATA[Amount of threads to be shown.]]></item>
+    <item name="wcf.acp.option.startpage_topic_limit"><![CDATA[Limit]]></item>
+    <item name="wcf.acp.option.startpage_topic_limit.description"><![CDATA[Truncate after X letters?]]></item>
+  </category>
+</language>
