@@ -18,7 +18,7 @@
                 </div>
                 <div class="containerContent"style="padding-left: 15px;">
                   <h2 class="messageTitle">
-                    {$entry->prefix}{$entry->topic}
+                    <a href="index.php?page=Thread&amp;threadID={$entry->threadID}{@SID_ARG_2ND}">{$entry->prefix}{$entry->topic}</a>
                   </h2>
                   <div class="firstPost light">
                     {lang}wbb.start.news.entry.by{/lang}
