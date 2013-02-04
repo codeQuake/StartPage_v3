@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite: Forennews</packagename>
     <packagedescription><![CDATA[Neuigkeiten für die Startseite]]></packagedescription>
-    <version>2.0.0 dev 1</version>
+    <version>2.0.0 alpha 1</version>
     <date>2013-02-03</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -26,6 +26,7 @@
     <!--XML-->
     <boxes>boxes.xml</boxes>
     <options>options.xml</options>
+    <languages languagecode="de">de.xml</languages>
     <!--Archive-->
     <templates>templates.tar</templates>
     <files>files.tar</files>

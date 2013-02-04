@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+  <category name="wbb.start">
+    <item name="wbb.start.news.title"><![CDATA[Nachrichten und Ankündigungen]]></item>
+    <item name="wbb.start.news.entry.by">
+      <![CDATA[von      <a href="index.php?page=User&amp;userID={$entry->userID}">
+                            {$entry->username}
+                        </a> ({@$entry->time|time})
+               <br/>in <a href="index.php?page=Board&amp;boardID={$entry->boardID}">{$entry->title}</a>]]></item>
+  </category>
+
+  <category name="wcf.acp.option">
+    <item name="wcf.acp.option.category.startpage.news"><![CDATA[Neuigkeiten Box]]></item>
+    <item name="wcf.acp.option.category.startpage.news.description"><![CDATA[]]></item>
+    <item name="wcf.acp.option.startpage_news_limit"><![CDATA[Wie viele Neuigkeiten anzeigen?]]></item>
+    <item name="wcf.acp.option.startpage_news_limit.description"><![CDATA[Wie viele Neuigkeiten sollen angezeigt werden?]]></item>
+    <item name="wcf.acp.option.startpage_news_boards"><![CDATA[Foren für Neuigkeiten]]></item>
+    <item name="wcf.acp.option.startpage_news_boards.description"><![CDATA[Aus welchen Foren sollen die Neuigkeiten kommen? Mehrere Foren durch Kommata trennen.]]></item>
+  </category>
+</language>

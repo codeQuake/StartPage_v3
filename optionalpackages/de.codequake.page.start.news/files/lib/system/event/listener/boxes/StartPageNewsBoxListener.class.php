@@ -23,8 +23,9 @@ class StartPageNewsBoxListener implements EventListener{
         $this->news = new ThreadList();
         if(!empty($boardIDs)){
             $this->news->sqlConditions .= "boardID IN(".$boardIDs.")";
-            $this->news->sqlSelects .= " firstpost.message, firstpost.enableSmilies, firstpost.enableHtml, firstpost.enableBBCodes, ";
-            $this->news->sqlJoins .= "LEFT JOIN wbb".WBB_N."_post firstpost ON (firstpost.postID = thread.firstPostID)";
+            //firstpost
+            $this->news->sqlSelects .= " firstpost.message, firstpost.enableSmilies, firstpost.enableHtml, firstpost.enableBBCodes, wbb".WBB_N."_board.title,";
+            $this->news->sqlJoins .= "LEFT JOIN wbb".WBB_N."_post firstpost ON (firstpost.postID = thread.firstPostID) LEFT JOIN wbb".WBB_N."_board ON (wbb".WBB_N."_board.boardID = thread.boardID)";
             $this->news->sqlOrderBy = 'thread.time DESC';
             $this->news->limit = STARTPAGE_NEWS_LIMIT;
             $this->news->readThreads();

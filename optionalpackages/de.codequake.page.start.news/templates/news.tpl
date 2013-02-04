@@ -11,14 +11,33 @@
 
     {foreach from=$news item=entry}
         <div class="message threadNo-{$entry->threadID}">
-            <div class="messageHeader">
+          <div class="messageContentInner container-{cycle name=messageCycle}">
+              <div class="messageHeader">
+                <div class="containerIconLarge">
+                  <img src="{icon}{$entry->getIconName()}M.png{/icon}" alt="" />
+                </div>
+                <div class="containerContent">
+                  <h2 class="messageTitle">
+                    {$entry->prefix}{$entry->topic}
+                  </h2>
+                  <div class="firstPost light">
+                    {lang}wbb.start.news.entry.by{/lang}
+                  </div>
+                </div>
+              </div>
+              <div class="messageContent newsContent" style="border-style: none;">
+                <div class="messageContentInner">
+                
+                  {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
+                </div>
+              </div>
+          </div>
+          <!--<div class="messageHeader">
                 <div class="containerIcon">
                     <img src="{icon}newsL.png{/icon}" alt="" />
                 </div>
                 <div class="containerContent">
-                    <h3 class="messageTitle">
-                        {$entry->prefix}{$entry->topic}
-                    </h3>
+                    
                     <p class="smallFont">
                         <a href="index.php?page=User&amp;userID={$entry->userID}">
                             {$entry->username}
@@ -31,7 +50,7 @@
                 <div class="messageContentInner">
                     {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
                 </div>
-            </div>
+            </div>-->
         </div>
     {/foreach}
 </div>
