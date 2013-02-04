@@ -35,6 +35,8 @@
     <!--XML-->
     <pagemenu>pagemenu.xml</pagemenu>
     <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+    <languages languagecode="en">en.xml</languages>
     <options>options.xml</options>
     <groupoptions>groupoptions.xml</groupoptions>
     <acpmenu>acpmenu.xml</acpmenu>

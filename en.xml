@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+  <!--Content-->
+  <category name="wbb.start">
+    <item name="wbb.start.title"><![CDATA[Startpage]]></item>
+    <item name="wbb.start.copyright"><![CDATA[<p class="smallFont startCopy"><a href="http://codequake.de">Plugin: <strong>Startpage</strong>, developed by <strong>codeQuake</strong></a></p>]]></item>
+  </category>
+  
+  <category name="wbb.header">
+    <item name="wbb.header.menu.start"><![CDATA[Startpage]]></item>
+  </category>
+  
+  <!--ACP-->
+  <category name="wbb.acp.startpage">
+    <item name="wbb.acp.startpage.boxlist"><![CDATA[List Boxes]]></item>
+    <item name="wbb.acp.startpage.boxlist.id"><![CDATA[Box-ID]]></item>
+    <item name="wbb.acp.startpage.boxlist.name"><![CDATA[Name]]></item>
+    <item name="wbb.acp.startpage.boxlist.type"><![CDATA[Box-Type]]></item>
+    <item name="wbb.acp.startpage.boxlist.showorder"><![CDATA[Showorder]]></item>
+    <item name="wbb.acp.startpage.box.type.left"><![CDATA[Left]]></item>
+    <item name="wbb.acp.startpage.box.type.right"><![CDATA[Right]]></item>
+    <item name="wbb.acp.startpage.box.add"><![CDATA[Add a new Box]]></item>
+    <item name="wbb.acp.startpage.box.edit"><![CDATA[Edit Box]]></item>
+    <item name="wbb.acp.box.delete"><![CDATA[Delete Box]]></item>
+    <item name="wbb.acp.startpage.box.enable"><![CDATA[Activate Box]]></item>
+    <item name="wbb.acp.startpage.box.disable"><![CDATA[Deactivate Box]]></item>
+    <item name="wbb.acp.startpage.box.delete"><![CDATA[Delete Box]]></item>
+    <item name="wbb.acp.startpage.box.delete.sure"><![CDATA[Are you sure you want to delete this box?]]></item>
+    <item name="wbb.acp.startpage.box.add.success"><![CDATA[Adding succesful!]]></item>
+    <item name="wbb.acp.startpage.box.edit.success"><![CDATA[Changes saved.]]></item>
+    <item name="wbb.acp.startpage.boxlist.source"><![CDATA[Template-Source]]></item>
+    <item name="wbb.acp.startpage.box.name.error.notunique"><![CDATA[Name isn't unique! Please enter another name.]]></item>
+  </category>
+  
+  <category name="wcf.acp.option">
+    <item name="wcf.acp.option.category.startpage"><![CDATA[Startpage]]></item>
+    <item name="wcf.acp.option.category.startpage.description"></item>
+  </category>
+
+  <category name="wcf.acp.group.option">
+    <item name="wcf.acp.group.option.category.admin.startpage"><![CDATA[Startpage]]></item>
+    <item name="wcf.acp.group.option.category.admin.startpage.description"><![CDATA[]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canEditBoxes"><![CDATA[Can Edit Boxes]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canEditBoxes.description"><![CDATA[Users of this box can edit boxes and their states.]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes"><![CDATA[Can Delete Boxes]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes.description"><![CDATA[Users can delete boxes]]></item>
+  </category>
+
+  <category name="wbb.acp.menu">
+    <item name="wbb.acp.menu.link.content.startpage"><![CDATA[Startpage]]></item>
+    <item name="wbb.acp.menu.link.content.startpage.list"><![CDATA[Boxlist]]></item>
+    <item name="wbb.acp.menu.link.content.startpage.box.add"><![CDATA[Add a new Box]]></item>
+  </category>
+
+</language>
