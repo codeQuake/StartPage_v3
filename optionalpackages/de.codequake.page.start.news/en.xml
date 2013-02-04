@@ -6,7 +6,7 @@
       <![CDATA[by      <a href="index.php?page=User&amp;userID={$entry->userID}">
                             {$entry->username}
                         </a> ({@$entry->time|time})
-               <br/>in <a href="index.php?page=Board&amp;boardID={$entry->boardID}">{$entry->title}</a>]]></item>
+               <br/>in <a href="index.php?page=Board&amp;boardID={$entry->boardID}">{lang}{$entry->title}{/lang}</a>]]></item>
     <item name="wbb.start.news.continue"><![CDATA[continue...]]></item>
     <item name="wbb.start.news.comments"><![CDATA[{if $entry->replies != 1}{$entry->replies} Comments{else}1 Comment{/if}]]></item>
   </category>
