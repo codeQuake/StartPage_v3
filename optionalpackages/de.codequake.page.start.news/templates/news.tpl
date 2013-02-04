@@ -16,7 +16,7 @@
                 <div class="containerIconLarge">
                   <img src="{icon}{$entry->getIconName()}M.png{/icon}" alt="" />
                 </div>
-                <div class="containerContent">
+                <div class="containerContent"style="padding-left: 15px;">
                   <h2 class="messageTitle">
                     {$entry->prefix}{$entry->topic}
                   </h2>
