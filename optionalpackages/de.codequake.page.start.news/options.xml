@@ -8,14 +8,22 @@
     </categories>
 
     <options>
+
+      <option name="startpage_news_boards">
+        <categoryname>startpage.news</categoryname>
+        <optiontype>text</optiontype>
+        <defaultvalue>0</defaultvalue>
+      </option>
+      
       <option name="startpage_news_limit">
         <categoryname>startpage.news</categoryname>
         <optiontype>integer</optiontype>
         <defaultvalue>5</defaultvalue>
       </option>
-      <option name="startpage_news_boards">
+
+      <option name="startpage_news_truncate">
         <categoryname>startpage.news</categoryname>
-        <optiontype>text</optiontype>
+        <optiontype>integer</optiontype>
         <defaultvalue>0</defaultvalue>
       </option>
     </options>

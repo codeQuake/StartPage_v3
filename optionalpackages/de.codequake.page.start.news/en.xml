@@ -16,6 +16,8 @@
     <item name="wcf.acp.option.category.startpage.news.description"><![CDATA[]]></item>
     <item name="wcf.acp.option.startpage_news_limit"><![CDATA[Newscount]]></item>
     <item name="wcf.acp.option.startpage_news_limit.description"><![CDATA[How many News should by visible?]]></item>
+    <item name="wcf.acp.option.startpage_news_truncate"><![CDATA[Truncate news?]]></item>
+    <item name="wcf.acp.option.startpage_news_truncate.description"><![CDATA[Truncate news after X letters]]></item>
     <item name="wcf.acp.option.startpage_news_boards"><![CDATA[Board for News]]></item>
     <item name="wcf.acp.option.startpage_news_boards.description"><![CDATA[Enter your Board-IDs.]]></item>
   </category>

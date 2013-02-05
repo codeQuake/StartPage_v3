@@ -18,6 +18,8 @@
   <requiredpackages>
     <requiredpackage minversion="2.1.0">com.woltlab.wbb</requiredpackage>
     <requiredpackage minversion="3.0.0 beta 1">de.codequake.page.start</requiredpackage>
+    <requiredpackage minversion="1.0.1" file="requirements/com.woltlab.community.htmlutility.tar">com.woltlab.community.htmlutility.tar</requiredpackage>
+
   </requiredpackages>
 
   <optionalpackages />

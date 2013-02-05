@@ -16,7 +16,7 @@
                 <div class="containerIconLarge">
                   <img src="{icon}{$entry->getIconName()}M.png{/icon}" alt="" />
                 </div>
-                <div class="containerContent"style="padding-left: 15px;">
+                <div class="containerContent" style="padding-left: 15px;">
                   <h2 class="messageTitle">
                     <a href="index.php?page=Thread&amp;threadID={$entry->threadID}{@SID_ARG_2ND}">{$entry->prefix}{$entry->topic}</a>
                   </h2>
@@ -27,7 +27,7 @@
               </div>
               <div class="messageContent newsContent" style="border-style: none;">
                 <div class="messageContentInner">
-                    {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)}
+                  {@$parser->parse($entry->message, $entry->enableSmilies, $entry->enableHtml, $entry->enableBBCodes)|truncatehtml:STARTPAGE_NEWS_TRUNCATE:false:'...'}
                 </div>
               </div>
             <div class="messageFooter">
