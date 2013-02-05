@@ -16,7 +16,7 @@
     <item name="wcf.acp.option.category.startpage.news.description"><![CDATA[]]></item>
     <item name="wcf.acp.option.startpage_news_limit"><![CDATA[Wie viele News anzeigen?]]></item>
     <item name="wcf.acp.option.startpage_news_limit.description"><![CDATA[Wie viele News sollen angezeigt werden?]]></item>
-    <item name="wcf.acp.option.startpage_news_truncate"><![CDATA[Neugikeiten kürzen?]]></item>
+    <item name="wcf.acp.option.startpage_news_truncate"><![CDATA[Neuigkeiten kürzen?]]></item>
     <item name="wcf.acp.option.startpage_news_truncate.description"><![CDATA[Nach wie vielen Zeichen sollen die Neuigkeiten gekürzt werden?]]></item>
     <item name="wcf.acp.option.startpage_news_boards"><![CDATA[Foren für News]]></item>
     <item name="wcf.acp.option.startpage_news_boards.description"><![CDATA[Aus welchen Foren sollen die News kommen? Mehrere Foren durch Kommata trennen.]]></item>
