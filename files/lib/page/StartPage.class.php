@@ -42,7 +42,8 @@ class StartPage extends AbstractPage{
     public function assignVariables(){
         parent::assignVariables();
         WCF::getTPL()->assign(array('rightBoxes' => $this->rightBoxes,
-                                    'leftBoxes' => $this->leftBoxes));
+                                    'leftBoxes' => $this->leftBoxes,
+                                     'allowSpidersToIndexThisPage' => true));
         
     }
 }
