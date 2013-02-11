@@ -40,8 +40,10 @@
   <category name="wcf.acp.group.option">
     <item name="wcf.acp.group.option.category.admin.startpage"><![CDATA[Startseite]]></item>
     <item name="wcf.acp.group.option.category.admin.startpage.description"><![CDATA[]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canAddBoxes"><![CDATA[Kann Boxen hinzufügen]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canAddBoxes.description"><![CDATA[Mitglieder dieser Benutzergruppe konnen neue Boxen hinzufügen]]></item>
     <item name="wcf.acp.group.option.admin.startpage.canEditBoxes"><![CDATA[Kann Boxeinstellungen verändern]]></item>
-    <item name="wcf.acp.group.option.admin.startpage.canEditBoxes.description"><![CDATA[Mitglieder dieser Benutzergruppe kann die Boxen auf der Startseite aktivieren & deaktivieren.]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canEditBoxes.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Boxen auf der Startseite aktivieren & deaktivieren.]]></item>
     <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes"><![CDATA[Kann Boxen entfernen]]></item>
     <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes.description"><![CDATA[Mitglieder dieser Benutzergruppe können die benutzerdefinierten Boxen auf der Startseite entfernen]]></item>
   </category>

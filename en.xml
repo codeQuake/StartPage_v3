@@ -40,10 +40,12 @@
   <category name="wcf.acp.group.option">
     <item name="wcf.acp.group.option.category.admin.startpage"><![CDATA[Startpage]]></item>
     <item name="wcf.acp.group.option.category.admin.startpage.description"><![CDATA[]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canAddBoxes"><![CDATA[Can Add Boxes]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canAddBoxes.description"><![CDATA[Members of this group can add boxes]]></item>
     <item name="wcf.acp.group.option.admin.startpage.canEditBoxes"><![CDATA[Can Edit Boxes]]></item>
-    <item name="wcf.acp.group.option.admin.startpage.canEditBoxes.description"><![CDATA[Users of this box can edit boxes and their states.]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canEditBoxes.description"><![CDATA[Members of this group can edit boxes and their states.]]></item>
     <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes"><![CDATA[Can Delete Boxes]]></item>
-    <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes.description"><![CDATA[Users can delete boxes]]></item>
+    <item name="wcf.acp.group.option.admin.startpage.canDeleteBoxes.description"><![CDATA[Members of this group can delete boxes]]></item>
   </category>
 
   <category name="wbb.acp.menu">
