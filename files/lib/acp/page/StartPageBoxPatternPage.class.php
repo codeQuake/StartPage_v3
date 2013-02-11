@@ -20,7 +20,7 @@ class StartPageBoxPatternPage extends AbstractPage{
                                 <div class="containerHead">
                                     <!--Title-->
                                 </div>
-                                 <div class="container-!>
+                                 <div class="container-1">
                                     <!--Content-->
                                  </div>
                                </div>';
@@ -39,7 +39,7 @@ class StartPageBoxPatternPage extends AbstractPage{
             WCFACP::getMenu()->setActiveMenuItem('wbb.acp.menu.link.content.startpage');
             WCF::getTPL()->assign(array('patternLeft' => $this->patternLeft,
                                         'patternRight' => $this->patternRight,
-                                        'patternRighList' => $this->patternRightList));
+                                        'patternRightList' => $this->patternRightList));
         }
 }
 ?>

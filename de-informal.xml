@@ -30,6 +30,13 @@
     <item name="wbb.acp.startpage.box.edit.success"><![CDATA[Ihre Änderungen wurden erfolgreich gespeichert.]]></item>
     <item name="wbb.acp.startpage.boxlist.source"><![CDATA[Template-Quelltext]]></item>
     <item name="wbb.acp.startpage.box.name.error.notunique"><![CDATA[Der Name muss eindeutig sein. Der eingegebene Name wird schon benutzt!]]></item>
+    <item name="wbb.acp.startpage.pattern.left"><![CDATA[Linke Box]]></item>
+    <item name="wbb.acp.startpage.pattern.right"><![CDATA[Rechte Box (Normal)]]></item>
+    <item name="wbb.acp.startpage.pattern.rightlist"><![CDATA[Rechte Box (Liste)]]></item>
+    <item name="wbb.acp.startpage.pattern.left.description"><![CDATA[Diese linke Box besteht aus einer Überschrift und einem Inhaltsbereich. Sie müssen nur den Titel der Box und den Inhalt (Template-Quelltext) hinzufügen. Beim Klick auf "Auswählen" werden sie automatisch zum Formular weitergeleitet.]]></item>
+    <item name="wbb.acp.startpage.pattern.right.description"><![CDATA[Dies ist die normale rechte Box. Sie ist für Inhalte jeder Art geeignet. Hinzugefügt werden müssen nur Titel der Box und der Quelltext für den Inhalt. Dies kann zum Beispiel ein Youtube-Video sein. Beim Klick auf "Auswählen" werden sie automatisch zum Formular weitergeleitet.]]></item>
+    <item name="wbb.acp.startpage.pattern.rightlist.description"><![CDATA[Diese rechte Box ist für Auflistungen aller Art geeignet. Sie können verschiedene Zeilen Inhalt hinzufügen. Zwei Auflistungspunkte (li-Tag) sind bereits als Beispiel vorhanden. Beim Klick auf "Auswählen" werden sie automatisch zum Formular weitergeleitet.]]></item>
+    <item name="wbb.acp.startpage.pattern.choose"><![CDATA[Vorlage auswählen]]></item>
   </category>
   
   <category name="wcf.acp.option">

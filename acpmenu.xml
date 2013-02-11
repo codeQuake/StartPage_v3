@@ -21,7 +21,7 @@
       <parent>wbb.acp.menu.link.content.startpage</parent>
       <showorder>3</showorder>
       <link>index.php?page=StartPageBoxPattern</link>
-      <icon>icon/boxTemplatesM.png</icon>
+      <icon>icon/boxPatternM.png</icon>
     </acpmenuitem>
   </import>
 </data>
