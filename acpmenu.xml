@@ -17,5 +17,11 @@
       <link>index.php?form=StartPageBoxAdd</link>
       <icon>icon/boxAddM.png</icon>
     </acpmenuitem>
+    <acpmenuitem name="wbb.acp.menu.link.content.startpage.pattern">
+      <parent>wbb.acp.menu.link.content.startpage</parent>
+      <showorder>3</showorder>
+      <link>index.php?page=StartPageBoxPattern</link>
+      <icon>icon/boxTemplatesM.png</icon>
+    </acpmenuitem>
   </import>
 </data>

@@ -52,6 +52,7 @@
     <item name="wbb.acp.menu.link.content.startpage"><![CDATA[Startpage]]></item>
     <item name="wbb.acp.menu.link.content.startpage.list"><![CDATA[Boxlist]]></item>
     <item name="wbb.acp.menu.link.content.startpage.box.add"><![CDATA[Add a new Box]]></item>
+    <item name="wbb.acp.menu.link.content.startpage.pattern"><![CDATA[Box pattern]]></item>
   </category>
 
 </language>
