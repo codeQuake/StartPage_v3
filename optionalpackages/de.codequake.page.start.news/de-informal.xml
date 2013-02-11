@@ -8,7 +8,7 @@
                         </a> ({@$entry->time|time})
                <br/>in <a href="index.php?page=Board&amp;boardID={$entry->boardID}">{lang}{$entry->title}{/lang}</a>]]></item>
     <item name="wbb.start.news.continue"><![CDATA[Weiterlesen...]]></item>
-    <item name="wbb.start.news.comments"><![CDATA[{if $entry->replies != 1}{$entry->replies} Kommentare{else}1 Kommentar{/if}]]></item>
+    <item name="wbb.start.news.comments"><![CDATA[{if $entry->replies != 1}{#$entry->replies} Kommentare{else}1 Kommentar{/if}]]></item>
   </category>
 
   <category name="wcf.acp.option">
