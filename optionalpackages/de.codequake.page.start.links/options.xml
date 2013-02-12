@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+  <import>
+    <categories>
+      <category name="startpage.links">
+        <parent>startpage</parent>
+      </category>
+    </categories>
+
+    <options>
+      <option name="startpage_links_limit">
+        <categoryname>startpage.links</categoryname>
+        <optiontype>integer</optiontype>
+        <defaultvalue>5</defaultvalue>
+      </option>
+      <option name="startpage_link_title_limit">
+        <categoryname>startpage.links</categoryname>
+        <optiontype>integer</optiontype>
+        <defaultvalue>55</defaultvalue>
+      </option>
+    </options>
+  </import>
+</data>
