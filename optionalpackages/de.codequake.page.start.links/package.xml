@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite: Neuste Links</packagename>
     <packagedescription><![CDATA[Neuste Links für die Startseite]]></packagedescription>
-    <version>1.0.0 Alpha 1</version>
+    <version>1.0.0 Beta 1</version>
     <date>2013-02-12</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -17,7 +17,8 @@
 
   <requiredpackages>
     <requiredpackage minversion="2.1.0">com.woltlab.wbb</requiredpackage>
-    <requiredpackage minversion="3.0.0 beta 1">de.codequake.page.start</requiredpackage>
+    <requiredpackage minversion="3.0.0 Beta 1">de.codequake.page.start</requiredpackage>
+    <requiredpackage minversion="1.2.3">de.chrihis.wcf.linkList</requiredpackage>
   </requiredpackages>
 
   <optionalpackages />
@@ -26,6 +27,9 @@
     <!--XML-->
     <boxes>boxes.xml</boxes>
     <options>options.xml</options>
+    <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+    <languages languagecode="en">en.xml</languages>
     <!--Archive-->
     <templates>templates.tar</templates>
     <files>files.tar</files>

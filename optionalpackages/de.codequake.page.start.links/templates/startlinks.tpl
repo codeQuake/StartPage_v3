@@ -16,7 +16,7 @@
                         </a> 
                     </p>
                     <p class="light smallFont">
-                        {lang}wcf.linkList.link.by{/lang}
+                        {lang}wbb.start.links.by{/lang}
                         {if $link->userID}
                             <a href="index.php?page=User&amp;userID={$link->userID}{@SID_ARG_2ND}">{$link->getAuthor()->username}</a>
                         {else}
@@ -26,6 +26,6 @@
                     </p>
                 </div>
             </li>
-        {/foreach]
+        {/foreach}
     </ul>
 </div>

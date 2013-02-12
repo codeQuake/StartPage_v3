@@ -13,11 +13,6 @@
         <optiontype>integer</optiontype>
         <defaultvalue>5</defaultvalue>
       </option>
-      <option name="startpage_link_title_limit">
-        <categoryname>startpage.links</categoryname>
-        <optiontype>integer</optiontype>
-        <defaultvalue>55</defaultvalue>
-      </option>
     </options>
   </import>
 </data>
