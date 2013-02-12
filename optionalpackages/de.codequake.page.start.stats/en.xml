@@ -9,7 +9,7 @@
 						<img src="{icon}membersS.png{/icon}" alt="" />
 					</div>
 					<div class="containerContent smallFont">
-				{#$stats.members} Members{/if}
+				{#$stats.members} Members
 				</div>
 				</li>
 					

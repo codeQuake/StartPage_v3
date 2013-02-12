@@ -30,7 +30,7 @@
     <item name="wbb.acp.startpage.box.edit.success"><![CDATA[Changes saved.]]></item>
     <item name="wbb.acp.startpage.boxlist.source"><![CDATA[Template-Source]]></item>
     <item name="wbb.acp.startpage.box.name.error.notunique"><![CDATA[Name isn't unique! Please enter another name.]]></item>
-      <!-- TODO: TRANSLATE-->
+      <!-- TODO: TRANSLATE & add wbb.acp.startpage.pattern-->
     <item name="wbb.acp.startpage.pattern.left"><![CDATA[Linke Box]]></item>
     <item name="wbb.acp.startpage.pattern.right"><![CDATA[Rechte Box (Normal)]]></item>
     <item name="wbb.acp.startpage.pattern.rightlist"><![CDATA[Rechte Box (Liste)]]></item>
