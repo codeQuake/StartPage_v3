@@ -11,17 +11,17 @@
       <option name="admin.startpage.canAddBoxes">
         <categoryname>admin.startpage</categoryname>
         <optiontype>boolean</optiontype>
-        <defaultvalue>1</defaultvalue>
+        <defaultvalue>0</defaultvalue>
       </option>
       <option name="admin.startpage.canEditBoxes">
         <categoryname>admin.startpage</categoryname>
         <optiontype>boolean</optiontype>
-        <defaultvalue>1</defaultvalue>
+        <defaultvalue>0</defaultvalue>
       </option>
       <option name="admin.startpage.canDeleteBoxes">
         <categoryname>admin.startpage</categoryname>
         <optiontype>boolean</optiontype>
-        <defaultvalue>1</defaultvalue>
+        <defaultvalue>0</defaultvalue>
       </option>
     </options>
   </import>
