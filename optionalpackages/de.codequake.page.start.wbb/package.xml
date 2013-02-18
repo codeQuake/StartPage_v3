@@ -3,8 +3,8 @@
   <packageinformation>
     <packagename>Startseite: Letzte Themen</packagename>
     <packagedescription><![CDATA[Letzte Themen für die Startseite]]></packagedescription>
-    <version>2.0.0 Beta 2</version>
-    <date>2013-01-23</date>
+    <version>2.0.0 RC 1</version>
+    <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
     <plugin>com.woltlab.wbb</plugin>

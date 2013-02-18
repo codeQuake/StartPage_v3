@@ -3,8 +3,8 @@
   <packageinformation>
     <packagename>Startseite: Neuste Links</packagename>
     <packagedescription><![CDATA[Neuste Links für die Startseite]]></packagedescription>
-    <version>1.0.0 Beta 1</version>
-    <date>2013-02-12</date>
+    <version>1.0.0 RC 1</version>
+    <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
     <plugin>com.woltlab.wbb</plugin>

@@ -3,8 +3,8 @@
   <packageinformation>
     <packagename>Startseite</packagename>
     <packagedescription><![CDATA[Startseite für das WoltLab Burning Board]]></packagedescription>
-    <version>3.0.0 Beta 4</version>
-    <date>2013-01-08</date>
+    <version>3.0.0 RC 1</version>
+    <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
     <plugin>com.woltlab.wbb</plugin>
