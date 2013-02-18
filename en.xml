@@ -30,14 +30,15 @@
     <item name="wbb.acp.startpage.box.edit.success"><![CDATA[Changes saved.]]></item>
     <item name="wbb.acp.startpage.boxlist.source"><![CDATA[Template-Source]]></item>
     <item name="wbb.acp.startpage.box.name.error.notunique"><![CDATA[Name isn't unique! Please enter another name.]]></item>
-      <!-- TODO: TRANSLATE & add wbb.acp.startpage.pattern-->
-    <item name="wbb.acp.startpage.pattern.left"><![CDATA[Linke Box]]></item>
-    <item name="wbb.acp.startpage.pattern.right"><![CDATA[Rechte Box (Normal)]]></item>
-    <item name="wbb.acp.startpage.pattern.rightlist"><![CDATA[Rechte Box (Liste)]]></item>
-    <item name="wbb.acp.startpage.pattern.left.description"><![CDATA[Diese linke Box besteht aus einer Überschrift und einem Inhaltsbereich. Sie müssen nur den Titel der Box und den Inhalt (Template-Quelltext) hinzufügen. Beim Klick auf "Auswählen" werden sie automatisch zum Formular weitergeleitet.]]></item>
-    <item name="wbb.acp.startpage.pattern.right.description"><![CDATA[Dies ist die normale rechte Box. Sie ist für Inhalte jeder Art geeignet. Hinzugefügt werden müssen nur Titel der Box und der Quelltext für den Inhalt. Dies kann zum Beispiel ein Youtube-Video sein. Beim Klick auf "Auswählen" werden sie automatisch zum Formular weitergeleitet.]]></item>
-    <item name="wbb.acp.startpage.pattern.rightlist.description"><![CDATA[Diese rechte Box ist für Auflistungen aller Art geeignet. Sie können verschiedene Zeilen Inhalt hinzufügen. Zwei Auflistungspunkte (li-Tag) sind bereits als Beispiel vorhanden. Beim Klick auf "Auswählen" werden sie automatisch zum Formular weitergeleitet.]]></item>
-    <item name="wbb.acp.startpage.pattern.choose"><![CDATA[Vorlage auswählen]]></item>
+      <!-- TODO: TRANSLATE & add -->
+    <item name="wbb.acp.startpage.pattern"><![CDATA[Box pattern]]></item>
+    <item name="wbb.acp.startpage.pattern.left"><![CDATA[Left Box]]></item>
+    <item name="wbb.acp.startpage.pattern.right"><![CDATA[Right Box (Normal)]]></item>
+    <item name="wbb.acp.startpage.pattern.rightlist"><![CDATA[Right Box (List)]]></item>
+    <item name="wbb.acp.startpage.pattern.left.description"><![CDATA[This is a standart left box. You only have to add a title and some content. Click on the button to continue.]]></item>
+    <item name="wbb.acp.startpage.pattern.right.description"><![CDATA[This is the standard right box. You only have to add a title and some content. Click on the button to continue.]]></item>
+    <item name="wbb.acp.startpage.pattern.rightlist.description"><![CDATA[This right box is made for using lists. You can add as many list elements (li-Tag) as you need. Click on the button to continue.]]></item>
+    <item name="wbb.acp.startpage.pattern.choose"><![CDATA[Choose pattern]]></item>
   </category>
   
   <category name="wcf.acp.option">
