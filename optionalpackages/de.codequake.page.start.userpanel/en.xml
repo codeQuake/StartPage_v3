@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+  <category name="wbb.start">
+    <item name="wbb.start.userpanel.posts"><![CDATA[Posts:]]></item>
+    <item name="wbb.start.userpanel.points"><![CDATA[Activitypoints:]]></item>
+    <item name="wbb.start.userpanel.stats"><![CDATA[Stats]]></item>
+    <item name="wbb.start.userpanel.threads"><![CDATA[Threads:]]></item>
+    <item name="wbb.start.userpanel.users"><![CDATA[Members:]]></item>
+    <item name="wbb.start.userpanel.users.new"><![CDATA[Newest Member:]]></item>
+  </category>
+
+</language>
