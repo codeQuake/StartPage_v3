@@ -15,7 +15,7 @@
                 <dt>{lang}wbb.start.userpanel.points{/lang}</dt>
                 <dd>{#$user->activityPoints}</dd>
             </dl>
-        
+        </div>
 		{else}
 		<div class="loginStart">
 				<div class="largeButtons">
@@ -41,4 +41,4 @@
                 <dd><a href="index.php?page=User&amp;userID={@$stats.newestMember->userID}{@SID_ARG_2ND}">{$stats.newestMember->username}</a></dd>
             </dl>
         </div>
-    </div>
+		</div>
