@@ -1,6 +1,6 @@
 ﻿<div class="border newestLinks">
     <div class="containerHead">
-        {lang}wbb.start.links.title{/lang}
+      <h3>{lang}wbb.start.links.title{/lang}</h3>
     </div>
     <ul class="dataList">
         {cycle values='container-1,container-2' name='messageCycle' print=false advance=false}
