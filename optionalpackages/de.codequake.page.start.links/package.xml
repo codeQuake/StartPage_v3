@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite: Neuste Links</packagename>
     <packagedescription><![CDATA[Neuste Links für die Startseite]]></packagedescription>
-    <version>1.0.0 RC 1</version>
+    <version>1.0.0</version>
     <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -33,5 +33,8 @@
     <!--Archive-->
     <templates>templates.tar</templates>
     <files>files.tar</files>
+  </instructions>
+  <instructions type="update" fromversion="1.0.0 RC 1">
+    <templates>templates.tar</templates>
   </instructions>
 </package>
