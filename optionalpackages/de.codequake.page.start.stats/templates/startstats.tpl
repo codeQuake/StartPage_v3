@@ -1,7 +1,6 @@
-﻿<div class="border">
+<div class="border">
       <div class="containerHead">
-            {lang}wbb.start.stats.title{/lang}
-        
+        <h3>{lang}wbb.start.stats.title{/lang}</h3>        
     </div>
     <ul class="dataList">
         {lang}wbb.start.stats.detailed{/lang}
