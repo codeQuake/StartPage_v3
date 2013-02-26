@@ -1,4 +1,4 @@
-﻿<div class="border posts">
+<div class="border posts">
     <div class="containerHead">
         <h3>
             {lang}wbb.start.posts.title{/lang}
