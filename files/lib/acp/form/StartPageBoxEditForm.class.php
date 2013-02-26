@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 //wcf imports
 require_once(WCF_DIR.'lib/acp/form/ACPForm.class.php');
 require_once(WCF_DIR.'lib/data/template/TemplateEditor.class.php');

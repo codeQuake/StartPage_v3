@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // wcf imports
 require_once(WCF_DIR.'lib/page/AbstractPage.class.php');
 

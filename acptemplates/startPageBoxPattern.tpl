@@ -1,4 +1,4 @@
-﻿{include file='header'}
+{include file='header'}
 <div class="mainHeadline">
     <img src="{@RELATIVE_WBB_DIR}icon/boxPatternL.png" alt="" />
     <div class="headlineContainer">

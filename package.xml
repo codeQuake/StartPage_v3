@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite</packagename>
     <packagedescription><![CDATA[Startseite für das WoltLab Burning Board]]></packagedescription>
-    <version>3.0.0 RC 1</version>
+    <version>3.0.0</version>
     <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -46,5 +46,14 @@
     
     <!--other files-->
     <sql>install.sql</sql>
+  </instructions>
+  <instructions type="update" fromversion="3.0.0 RC 1">
+    <groupoptions>groupoptions.xml</groupoptions>
+    <files>files.tar</files>
+    <templates>templates.tar</templates>
+    <acptemplates>acptemplates.tar</acptemplates>  
+    <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+    <languages languagecode="en">en.xml</languages>
   </instructions>
 </package>
