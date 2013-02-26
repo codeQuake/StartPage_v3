@@ -1,4 +1,4 @@
-﻿<div class="newsBox">
+<div class="newsBox">
     <h3 class="subHeadline">
         <img src="{icon}newsM.png{/icon}" alt="" /> {lang}wbb.start.news.title{/lang}
     </h3>

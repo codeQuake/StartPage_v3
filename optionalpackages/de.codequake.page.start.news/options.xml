@@ -24,7 +24,7 @@
       <option name="startpage_news_truncate">
         <categoryname>startpage.news</categoryname>
         <optiontype>integer</optiontype>
-        <defaultvalue>250</defaultvalue>
+        <defaultvalue>750</defaultvalue>
       </option>
     </options>
   </import>
