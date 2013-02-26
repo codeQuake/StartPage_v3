@@ -1,4 +1,4 @@
-﻿<div class="border newestLinks">
+<div class="border newestLinks">
     <div class="containerHead">
       <h3>{lang}wbb.start.links.title{/lang}</h3>
     </div>
