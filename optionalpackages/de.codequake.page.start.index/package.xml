@@ -1,32 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package name="de.codequake.page.start.index">
-<packageinformation>
-<packagename>Startseite: als Startseite setzen</packagename>
-<packagedescription>Hauptseite als Startseite</packagedescription>
-<version>2.0.0</version>
-<date>2010-10-16</date>
-<plugin>com.woltlab.wbb</plugin>
-<standalone>0</standalone>
-<isunique>1</isunique>
-</packageinformation>
+  <packageinformation>
+    <packagename>Startseite: als Startseite setzen</packagename>
+    <packagedescription>Hauptseite als Startseite</packagedescription>
+    <version>2.0.0 pl 1</version>
+    <date>2010-10-16</date>
+    <plugin>com.woltlab.wbb</plugin>
+    <standalone>0</standalone>
+    <isunique>1</isunique>
+  </packageinformation>
 
-<authorinformation>
-<author>Jens Krumsieck</author>
-<authorurl>http://codequake.de</authorurl>
-</authorinformation>
+  <authorinformation>
+    <author>Jens Krumsieck</author>
+    <authorurl>http://codequake.de</authorurl>
+  </authorinformation>
 
-<requiredpackages>
-<requiredpackage>de.codequake.page.start</requiredpackage>
-<requiredpackage minversion="2.1.0 RC 2">com.woltlab.wbb</requiredpackage>
-</requiredpackages>
+  <requiredpackages>
+    <requiredpackage>de.codequake.page.start</requiredpackage>
+    <requiredpackage minversion="2.1.0 RC 2">com.woltlab.wbb</requiredpackage>
+  </requiredpackages>
 
-<optionalpackages>
-<optionalpackage file="optionals/de.codequake.page.start.header.patch.21.tar">de.codequake.page.start.header.patch.21</optionalpackage>
-<optionalpackage file="optionals/de.codequake.page.start.header.patch.31.tar">de.codequake.page.start.header.patch.31</optionalpackage>
-</optionalpackages>
-<instructions type="install">
-<files>files.tar</files>
-<eventlistener>eventlistener.xml</eventlistener>
-</instructions>
+  <optionalpackages>
+    <optionalpackage file="optionals/de.codequake.page.start.header.patch.21.tar">de.codequake.page.start.header.patch.21</optionalpackage>
+    <optionalpackage file="optionals/de.codequake.page.start.header.patch.31.tar">de.codequake.page.start.header.patch.31</optionalpackage>
+  </optionalpackages>
+  <instructions type="install">
+    <files>files.tar</files>
+    <eventlistener>eventlistener.xml</eventlistener>
+  </instructions>
+  <instructions type="update" fromversion="2.0.0">
+    <files>files.tar</files>
+  </instructions>
 
 </package>
