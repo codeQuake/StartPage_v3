@@ -2,7 +2,7 @@
 /**
 ** @author Jens Krumsieck
 ** @package de.codequake.page.start
-** @license codeQuake-Startpage License (link coming soon)
+** @license Creative Commons by-nd 3.0 (http://creativecommons.org/licenses/by-nd/3.0/deed.de)
 **/
 
 //wcf imports
