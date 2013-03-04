@@ -26,7 +26,7 @@ class StartPageBoxDisableAction extends AbstractAction{
         //disable box
         $sql = "UPDATE wbb".WBB_N."_startpageboxes
                 SET active = 0
-                WHERE boxID = ".$this->boxID;
+                WHERE boxID = ".intval($this->boxID);
         WCF::getDB()->sendQuery($sql);
         
         //redirect

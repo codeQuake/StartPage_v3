@@ -21,6 +21,8 @@ class StartPageBoxDeleteAction extends AbstractAction{
     
     public function execute(){
         parent::execute();
+        // check permission
+        WCF::getUser()->checkPermission('admin.startpage.canEditBoxes');
         $box = new StartPageBox($this->boxID);
         
         //you can not edit plugin boxes
@@ -29,14 +31,14 @@ class StartPageBoxDeleteAction extends AbstractAction{
         //get Template & delete
         $sql = "SELECT templateID 
                 FROM wcf".WCF_N."_template
-                WHERE templateName = '".$box->boxName."'";
+                WHERE templateName = '".escapeString($box->boxName)."'";
         $row = WCF::getDB()->getFirstRow($sql);
         $template = new TemplateEditor($row['templateID']);
         $template->delete();
         
         //delete Box
         $sql = "DELETE FROM wbb".WBB_N."_startpageboxes
-                WHERE boxID = ".$this->boxID;
+                WHERE boxID = ".intval($this->boxID);
         WCF::getDB()->sendQuery($sql);
         
         //redirect

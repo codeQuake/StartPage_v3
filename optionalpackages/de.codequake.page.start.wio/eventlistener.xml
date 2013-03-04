@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "DTD/language.dtd">
+<data>	
+	<import>
+		<eventlistener>
+			<eventClassName>StartPage</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerClassFile>lib/system/event/listener/StartPageWIOListener.class.php</listenerClassFile>
+			<inherit>1</inherit>
+		</eventlistener>
+	</import>
+</data>

@@ -46,6 +46,11 @@
 				</div>
 			</div>
 		</div>
+		{if $additionalBoxes|isset}
+			<div class="border infoBox">
+				{@$additionalBoxes}
+			</div>
+		{/if}
 		<div style="text-align: center;">
 			{lang}wbb.start.copyright{/lang}
 		</div>

@@ -17,7 +17,7 @@ class StartPageBoxHelper{
         
         $sql = "SELECT boxID
                 FROM wbb".WBB_N."_startpageboxes
-                WHERE boxType = '".$type."'
+                WHERE boxType = '".escapeString($type)."'
                 AND active = 1
                 ORDER BY showOrder ASC";
         $res = WCF::getDB()->sendQuery($sql);
