@@ -2,40 +2,13 @@
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
   <category name="wbb.start">
     <item name="wbb.start.stats.title"><![CDATA[Statistik]]></item>
-    <item name="wbb.start.stats.detailed">
-      <![CDATA[
-    				<li class="container-1">
-					<div class="containerIcon">
-						<img src="{icon}membersS.png{/icon}" alt="" />
-					</div>
-					<div class="containerContent smallFont">
-				{#$stats.members} Mitglied{if $stats.members != 1}er{/if}
-				</div>
-				</li>
-					
-				<li class="container-2">
-				<div class="containerIcon">
-						<img src="{icon}copyS.png{/icon}" alt="" />
-					</div>
-					<div class="containerContent smallFont">
-				{#$stats.threads} {if $stats.threads == 1}Thema{else}Themen{/if}
-				</div>
-				</li>
-				<li class="container-1">
-				<div class="containerIcon">
-						<img src="{icon}messageS.png{/icon}" alt="" />
-					</div>
-					<div class="containerContent smallFont">
-				{#$stats.posts} {if $stats.posts == 1}Beitrag{else}Beiträge{/if} ({#$stats.postsPerDay} {if $stats.postsPerDay == 1}Beitrag{else}Beiträge{/if} pro Tag)	
-				</div>
-				</li>
-				<li class="container-2">
-				<div class="containerIcon">
-						<img src="{icon}registerS.png{/icon}" alt="" />
-					</div>
-					<div class="containerContent smallFont">
-				Neustes Mitglied: <a href="index.php?page=User&amp;userID={@$stats.newestMember->userID}{@SID_ARG_2ND}">{$stats.newestMember->username}</a></div>
-				</li>]]></item>
+    <item name="wbb.start.stats.members"><![CDATA[{#$stats.members} Mitglied{if $stats.members != 1}er{/if}]]></item>
+    <item name="wbb.start.stats.threads"><![CDATA[{#$stats.threads} {if $stats.threads == 1}Thema{else}Themen{/if}]]></item>
+    <item name="wbb.start.stats.posts">
+      <![CDATA[{#$stats.posts} {if $stats.posts == 1}Beitrag{else}Beiträge{/if} ({#$stats.postsPerDay} {if $stats.postsPerDay == 1}Beitrag{else}Beiträge{/if} pro Tag)
+        ]]>
+    </item>
+    <item name="wbb.start.stats.newestmember"><![CDATA[Neustes Mitglied: <a href="index.php?page=User&amp;userID={@$stats.newestMember->userID}{@SID_ARG_2ND}">{$stats.newestMember->username}</a>]]></item>
   </category>
 
 </language>
