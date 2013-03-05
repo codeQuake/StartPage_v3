@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite: Statistik</packagename>
     <packagedescription><![CDATA[Statistik für die Startseite]]></packagedescription>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -34,5 +34,14 @@
   </instructions>
   <instructions type="update" fromversion="2.0.0 RC 1">
     <templates>templates.tar</templates>
+    <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+    <languages languagecode="en">en.xml</languages>
+  </instructions>
+  <instructions type="update" fromversion="2.0.0">
+    <templates>templates.tar</templates>
+    <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+    <languages languagecode="en">en.xml</languages>
   </instructions>
 </package>
