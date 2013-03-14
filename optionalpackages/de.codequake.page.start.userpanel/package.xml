@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite: Userpanel</packagename>
     <packagedescription><![CDATA[Userpanel für die Startseite]]></packagedescription>
-    <version>1.0.0 dev 1</version>
+    <version>1.0.0 RC 1</version>
     <date>2013-02-24</date>
     <standalone>0</standalone>
     <isunique>0</isunique>

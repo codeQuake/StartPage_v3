@@ -5,7 +5,9 @@
             {if $user->getAvatar()}{@$user->getAvatar()}{else}<img src="{RELATIVE_WCF_DIR}images/avatars/avatar-default.png" alt="" style="width:100px;" />{/if}
         </div>
         <div class="userInfo smallFont">
-            <p class="userName startName">{$user->username}</p>
+            <p class="userName startName">
+              <a href="index.php?page=User&amp;userID={$user->userID}{@SID_ARG_2ND}">{$user->username}</a>
+            </p>
             <div class="rankImage">
                 {@$user->getRank()}
             </div>
