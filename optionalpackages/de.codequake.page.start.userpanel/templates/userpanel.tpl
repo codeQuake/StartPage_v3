@@ -1,4 +1,4 @@
-﻿
+
     <div class="startUserpanel">
 	{if $user->userID != 0}
         <div class="userAvatar userInfoAvatar">
