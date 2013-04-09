@@ -23,7 +23,7 @@ class BoxListSortAction extends AbstractAction{
         foreach($this->showOrder as $boxID => $position)
         {
          $sql = "UPDATE wbb".WBB_N."_startpageboxes
-                SET showOrder = ".escapeString($position)." 
+                SET showOrder = ".intval($position)." 
                 WHERE boxID = ".intval($boxID);
          WCF::getDB()->sendQuery($sql);
         }
