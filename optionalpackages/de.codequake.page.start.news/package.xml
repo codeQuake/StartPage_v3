@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite: Forennews</packagename>
     <packagedescription><![CDATA[Neuigkeiten für die Startseite]]></packagedescription>
-    <version>2.0.0</version>
+    <version>2.0.0 pl 1</version>
     <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -38,5 +38,8 @@
   <instructions type="update" fromversion="2.0.0 RC 1">
     <templates>templates.tar</templates>
     <options>options.xml</options>
+  </instructions>
+  <instructions type="update" fromversion="2.0.0">
+    <templates>templates.tar</templates>
   </instructions>
 </package>
