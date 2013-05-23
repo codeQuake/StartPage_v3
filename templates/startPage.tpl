@@ -2,6 +2,12 @@
 <head>
 	<title>{lang}wbb.start.title{/lang} - {lang}{PAGE_TITLE}{/lang}</title>
 	{include file='headInclude' sandbox=false}
+	<script type="text/javascript">
+		//<![CDATA[
+		var INLINE_IMAGE_MAX_WIDTH = {@INLINE_IMAGE_MAX_WIDTH};
+		//]]>
+	</script>
+	<script type="text/javascript" src="wcf/js/ImageResizer.class.js"></script>
 </head>
 <body{if $templateName|isset} id="tpl{$templateName|ucfirst}"{/if}>
 {include file='header' sandbox=false}
