@@ -3,7 +3,7 @@
   <packageinformation>
     <packagename>Startseite</packagename>
     <packagedescription><![CDATA[Startseite für das WoltLab Burning Board]]></packagedescription>
-    <version>3.0.0 pl 6</version>
+    <version>3.0.0 pl 7</version>
     <date>2013-02-18</date>
     <standalone>0</standalone>
     <isunique>0</isunique>
@@ -78,6 +78,9 @@
     <templates>templates.tar</templates>
   </instructions>
   <instructions type="update" fromversion="3.0.0 pl 5">
+    <files>templates.tar</files>
+  </instructions>
+  <instructions type="update" fromversion="3.0.0 pl 6">
     <files>templates.tar</files>
   </instructions>
 </package>

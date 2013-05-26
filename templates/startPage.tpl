@@ -7,7 +7,7 @@
 		var INLINE_IMAGE_MAX_WIDTH = {@INLINE_IMAGE_MAX_WIDTH};
 		//]]>
 	</script>
-	<script type="text/javascript" src="wcf/js/ImageResizer.class.js"></script>
+	<script type="text/javascript" src="{RELATIVE_WCF_DIR}/js/ImageResizer.class.js"></script>
 </head>
 <body{if $templateName|isset} id="tpl{$templateName|ucfirst}"{/if}>
 {include file='header' sandbox=false}
